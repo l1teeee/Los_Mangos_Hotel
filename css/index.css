@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: #DBF6E9;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: #31326F;
+    border-radius: 5px;
+}
+
+/*Header*/
+header{
+    display: flex;
+    padding: 14px 14px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #78c7ca;
+}
+
+header #logo img{
+    width: 60px;
+    height: 60px;
+    min-height: 30px;
+    min-width: 30px;
+}
+
+header #logo{
+    margin-left: 10px;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+header span{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+header span i{
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #31326F;
+    
+}
+    
+header span i:hover{
+    opacity: 0.40;
+    transition: 0.5s;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgb(198, 243, 221);
+    background-color: rgb(219, 246, 233, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #31326F;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #73b9bb;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+
+
+
+
+
+
+/*Header*/
+
+/*Body*/
+
+
+
+.line{
+    height: 1.5px;
+    background-color: #027373;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.line1{
+    margin-top: 1vw;
+    height: 2px;
+    background-color: #027373;
+}
+
+body{
+    background-color: #c6deec;
+}
+
+
+.menus a{
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #2f448e;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.menus i{
+    font-size: 24px;
+}
+
+.menus a span:first-child {
+    display: inline-block;
+}
+
+.menus a{
+    
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+   
+.menus a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+}
+
+.menus a span {
+    transition: transform 0.2s ease-out;
+  }
+   
+  .menus a:hover span:first-child {
+    transform: translateY(100%);
+  }
+   
+  .menus a:hover span:last-child {
+    transform: none;
+}
+
+.menus[data-animation="to-top"] a span:last-child {
+    transform: translateY(100%);
+}
+   
+.menus[data-animation="to-top"] a:hover span:first-child {
+    transform: translateY(-100%);
+}
+   
+.menus[data-animation="to-right"] a span:last-child {
+    transform: translateX(-100%);
+}
+   
+.menus[data-animation="to-right"] a:hover span:first-child {
+    transform: translateX(100%);
+}
+   
+.menus[data-animation="to-left"] a span:last-child {
+    transform: translateX(100%);
+}
+   
+.menus[data-animation="to-left"] a:hover span:first-child {
+    transform: translateX(-100%);
+}
+
+.menus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #BBDDF2;
+    margin-top: vw;
+}
+
+
+#slider{
+    display: block;
+    overflow: hidden;
+    width: 97%;
+    margin-left: 1.50%;
+    border-radius: 10px;
+}
+
+
+#slider figure{
+    position: relative;
+    width: 1000%;
+    margin: 0;
+    left: 0;
+    animation: 50s slider infinite;
+}
+
+.enun{
+    position:absolute;
+    z-index: 1;
+    
+}
+
+.enun h1{
+    font-size: 30px;
+    font-family: 'Manrope', sans-serif;
+}
+
+#slider figure img{
+    opacity: 0.6;
+    width: 10%;
+    height: 41vw;
+    float: left;
+}
+
+@keyframes slider{
+   0% {left: 0;}
+   5.2% {left: 0;}
+   10.4% {left: -100%;}
+   15.6% {left: -100%;}
+   20.8% {left: -200%;}
+   26% {left: -200%;}
+   31.2% {left: -300%;}
+   36.4% {left: -300%;}
+   41.6% {left: -400%;}
+   46.8% {left: -400%;}
+   52% {left: -500%;}
+   57.2% {left: -500%;}
+   62.4% {left: -600%;}
+   67.6% {left: -600%;}
+   72.8% {left: -700%;}
+   78% {left: -700%;}
+   85% {left: -800%;}
+   90% {left: -800%;}
+   100% {left: -900%;}
+}
+
+
+
+
+.bloque{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: 2vw;
+    gap:2vw;
+
+}
+
+.califica h4{
+    text-align: center;
+    margin-top: 2vw;
+}
+
+
+.card{
+    margin: 1vw;
+    width: 15rem;
+    align-items: center;
+    background: rgba( 49, 50, 111, 1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #DBF6E9;
+}
+
+.card i{
+    margin-top: 2rem;
+    color: #FFC93C;
+}
+
+.card h5{
+    margin-top: 1vw;
+}
+
+
+
+.card .tit{
+    background-color:  #DBF6E9;
+    padding: 1vw;
+    border-radius: 100%;
+    color: #1B1A17;
+}
+
+.card i{
+    font-size: 45px;
+}
+
+
+.card .card-text{
+    text-align: justify;
+}
+
+.who .texto{
+    margin: 2vw;
+}
+
+.who .texto .display-5{
+    font-size: 30px;
+    margin: 2vw 0 1vw 0;
+    text-align: center;
+}
+
+.who .texto .h6{
+    text-align: justify;
+}
+
+.fran{
+    display: flex;
+    flex-direction: row;
+}
+
+.fran img{
+    width: 50%;
+    opacity: 0.90;
+
+}
+
+.fran img-fluid{
+    justify-content: flex-start;
+}
+
+/*Body*/
+
+
+
+
+
+
+/*HEADER MENU*/
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+}
+
+
+@media(max-width:549px) and (min-width:314px){
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+
+    #slider{
+        margin-top: 3vw;
+    }
+
+    .fran{
+        flex-direction: column;
+    }
+
+    .fran img{
+        width: 100%;
+    }
+
+    .enun{
+        margin: 16vw 22vw 16vw 22vw;
+
+    }
+    .enun h1{
+        font-size: 18px;
+        text-align: center;
+
+    }
+}
+
+@media(max-width:313px) and (min-width:200px){
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+
+    #slider{
+        margin-top: 5vw;
+    }
+
+    .fran{
+        flex-direction: column;
+    }
+
+    .fran img{
+        width: 100%;
+    }
+    .enun{
+        margin: 15vw 15vw 20vw 20vw;
+
+    }
+    .enun h1{
+        font-size: 12px;
+        text-align: center;
+
+    }
+
+    header span i{
+        font-size: 20px;
+
+    }
+
+}

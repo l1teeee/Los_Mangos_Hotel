@@ -27,8 +27,8 @@ header{
 header #logo img{
     width: 60px;
     height: 60px;
-    min-height: 30px;
     min-width: 30px;
+    min-height: 30px;
 }
 
 header #logo{
@@ -214,9 +214,7 @@ body{
 #slider{
     display: block;
     overflow: hidden;
-    width: 97%;
-    margin-left: 1.50%;
-    border-radius: 10px;
+    width: 100%;
 }
 
 
@@ -240,9 +238,9 @@ body{
 }
 
 #slider figure img{
-    opacity: 0.6;
+    opacity: 0.7;
     width: 10%;
-    height: 41vw;
+    height: 42vw;
     float: left;
 }
 
@@ -277,14 +275,18 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    margin: 2vw;
-    gap:2vw;
+    gap: 5vw;
+    padding-bottom: 2vw;
 
+}
+
+.califica{
+    background-color: #a2c1d8;
 }
 
 .califica h4{
     text-align: center;
-    margin-top: 2vw;
+    padding-top: 1vw;
 }
 
 
@@ -373,8 +375,110 @@ body{
     }
 }
 
+@media(max-width:2599px) and (min-width:1200px){
+    .enun{
+        margin: 18vw 32vw 32vw 31vw;
 
-@media(max-width:549px) and (min-width:314px){
+    }
+    .enun h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .menus span{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:1199px) and (min-width:901px){
+    .enun{
+        margin: 18vw 32vw 32vw 32vw;
+
+    }
+    .enun h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .menus span{
+        font-size: 25px;
+    }
+
+    .califica h4{
+        font-size: 30px;
+
+    }
+    .bloque{
+        gap:2vw;
+    }
+    
+    .card{ 
+        width: 20vw; 
+    }
+
+
+    .card i{
+        margin-top: 1rem;
+        font-size: 45px;
+    }
+
+    .card h5{
+        margin-top: 5px;
+        font-size: 23px;
+    }
+
+    .card .tit h3{
+        border-radius: 100%;
+        font-size: 28px;
+    }
+
+    .card-body p{
+        font-size: 22px;
+    }
+
+
+}
+
+
+
+
+@media(max-width:900px) and (min-width:751px){
+    .enun{
+        margin: 18vw 30vw 30vw 30vw;
+
+    }
+    .enun h1{
+        font-size: 20px;
+        text-align: center;
+
+    }
+}
+
+@media(max-width:750px) and (min-width:551px){
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+    
+    #slider{
+        margin-top: 3vw;
+    }
+
+    .enun{
+        margin: 16vw 22vw 16vw 22vw;
+
+    }
+    .enun h1{
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+
+}
+
+
+@media(max-width:550px) and (min-width:379px){
     .menus{
         visibility:hidden;
         display:none;
@@ -403,8 +507,8 @@ body{
     }
 
     .bloque{
-        gap: 1vw;
-        margin: 1vw;
+        margin: 10px;
+        gap:10px;
     }
 
     .card{ 
@@ -423,8 +527,8 @@ body{
     }
 
     .card .tit h3{
-    border-radius: 100%;
-    font-size: 20px;
+        border-radius: 100%;
+        font-size: 20px;
     }
 
     .card .card-text{
@@ -432,15 +536,25 @@ body{
     }
 
     #des{
-        font-size: 15px;
+        font-size: 13px;
     }
 
 }
 
-@media(max-width:313px) and (min-width:200px){
+@media(max-width:378px) and (min-width:200px){
+    header #logo img{
+        width: 40px;
+        height: 40px;
+    }
+
     .menus{
         visibility:hidden;
         display:none;
+    }
+
+    .califica h4{
+        font-size: 16px;
+        padding-top: 2vw;
     }
 
     #slider{
@@ -459,7 +573,7 @@ body{
 
     }
     .enun h1{
-        font-size: 12px;
+        font-size: 15px;
         text-align: center;
 
     }
@@ -476,24 +590,31 @@ body{
     }
 
     .card{ 
-        width: 10rem; 
+        width: 42vw; 
     }
+
 
     .card i{
         margin-top: 1rem;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .card h5{
-        margin-top: 10px;
+        margin-top: 5px;
+        font-size: 14px;
     }
 
-    .card .tit{
-    border-radius: 100%;
+    .card .tit h3{
+        border-radius: 100%;
+        font-size: 21px;
     }
 
     .card-body p{
-        font-size: 16px;
+        font-size: 12px;
+    }
+
+    #des{
+        font-size: 11px;
     }
 
 }

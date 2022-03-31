@@ -289,6 +289,7 @@ body{
 
 
 .card{
+    height: auto;
     margin: 1vw;
     width: 15rem;
     align-items: center;
@@ -304,6 +305,7 @@ body{
 .card i{
     margin-top: 2rem;
     color: #FFC93C;
+    font-size: 45px;
 }
 
 .card h5{
@@ -319,9 +321,6 @@ body{
     color: #1B1A17;
 }
 
-.card i{
-    font-size: 45px;
-}
 
 
 .card .card-text{
@@ -402,6 +401,40 @@ body{
         text-align: center;
 
     }
+
+    .bloque{
+        gap: 1vw;
+        margin: 1vw;
+    }
+
+    .card{ 
+        width: 10rem; 
+    }
+
+    .card i{
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+
+    .card-title{
+        font-size: 15px;
+        
+        margin-top: 10px;
+    }
+
+    .card .tit h3{
+    border-radius: 100%;
+    font-size: 20px;
+    }
+
+    .card .card-text{
+        font-size: 12px;
+    }
+
+    #des{
+        font-size: 15px;
+    }
+
 }
 
 @media(max-width:313px) and (min-width:200px){
@@ -434,6 +467,33 @@ body{
     header span i{
         font-size: 20px;
 
+    }
+
+    
+    .bloque{
+        gap: 5px;
+        margin: 5px;
+    }
+
+    .card{ 
+        width: 10rem; 
+    }
+
+    .card i{
+        margin-top: 1rem;
+        font-size: 22px;
+    }
+
+    .card h5{
+        margin-top: 10px;
+    }
+
+    .card .tit{
+    border-radius: 100%;
+    }
+
+    .card-body p{
+        font-size: 16px;
     }
 
 }

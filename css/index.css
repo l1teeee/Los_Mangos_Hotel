@@ -1,3 +1,21 @@
+
+/*Fuentes que se pueden usar
+font-family: 'DM Sans', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+Colores
+#FFC93C - Amarillo
+#DBF6E9 - celeste
+#9DDFD3 - celeste oscuro
+#31326F - azul
+*/
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +52,6 @@ header #logo img{
 header #logo{
     margin-left: 10px;
     justify-content: center;
-    flex-shrink: 1;
 }
 
 header span{
@@ -131,11 +148,10 @@ body{
 
 
 .menus a{
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     text-decoration: none;
     color: #2f448e;
     margin: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .menus i{
@@ -147,7 +163,7 @@ body{
 }
 
 .menus a{
-    
+    font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -233,8 +249,7 @@ body{
 }
 
 .enun h1{
-    font-size: 30px;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 #slider figure img{
@@ -275,9 +290,6 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    gap: 5vw;
-    padding-bottom: 2vw;
-
 }
 
 .califica{
@@ -285,15 +297,15 @@ body{
 }
 
 .califica h4{
+    font-family: 'DM Sans', sans-serif;
     text-align: center;
-    padding-top: 1vw;
+    padding-top: 2vw;
 }
 
 
 .card{
     height: auto;
     margin: 1vw;
-    width: 15rem;
     align-items: center;
     background: rgba( 49, 50, 111, 1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -305,38 +317,49 @@ body{
 }
 
 .card i{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     color: #FFC93C;
-    font-size: 45px;
+    
 }
 
 .card h5{
-    margin-top: 1vw;
+    margin-top: 5px;
 }
 
 
 
 .card .tit{
-    background-color:  #DBF6E9;
+    background: rgba( 219, 246, 233, 1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 50%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 1vw;
-    border-radius: 100%;
     color: #1B1A17;
 }
 
 
 
 .card .card-text{
-    text-align: justify;
+    text-align: center;
+}
+
+
+.who{
+    background-color: #b7d0e4;
 }
 
 .who .texto{
-    margin: 2vw;
+    margin-bottom: 2vw;
+    padding-top: 2vw;
 }
 
+
 .who .texto .display-5{
-    font-size: 30px;
-    margin: 2vw 0 1vw 0;
     text-align: center;
+    font-family: 'DM Sans', sans-serif;
+
 }
 
 .who .texto .h6{
@@ -344,8 +367,17 @@ body{
 }
 
 .fran{
+    justify-content: flex-end;
+    background-color: #b7d0e4;
     display: flex;
     flex-direction: row;
+    
+}
+
+.fran-der{
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .fran img{
@@ -354,8 +386,36 @@ body{
 
 }
 
-.fran img-fluid{
+.fran .img-fluid{
     justify-content: flex-start;
+}
+
+.fran .text-ban1{
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    
+}
+
+.fran .text-ban2{
+    text-align: justify;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+footer{
+    background-color:   #94abbd;
+    justify-content: space-between;
+}
+
+footer .fo i{
+    color: #31326F;
+    font-size: 24px;
+    padding:10px;
+}
+
+footer .fo i:hover{
+    opacity: 0.20;
+    transition: 1s;
 }
 
 /*Body*/
@@ -377,20 +437,77 @@ body{
 
 @media(max-width:2599px) and (min-width:1200px){
     .enun{
-        margin: 18vw 32vw 32vw 31vw;
+        margin: 18% 18% 0px 30%;
 
     }
     .enun h1{
-        font-size: 30px;
+        font-size: 35px;
         text-align: center;
     }
 
     .menus span{
         font-size: 20px;
     }
+
+    #boton{
+        visibility:hidden;
+        display:none;
+    }
+
+    .card{
+        width: 15rem;
+    }
+
+    .card i{
+        font-size: 60px;
+    }
+
+    .card .tit{
+        margin-bottom: 2vw;
+    }
+
+
+    .califica h4{
+        font-size: 32px;
+    }
+
+    .bloque{ 
+        gap: 1vw;
+        padding-bottom: 2vw;
+    }
+
+    .bloque h5{
+        font-size: 28px;
+    }
+
+    
+    .who .texto .display-5{
+        font-size: 42px;
+    }
+
+    .fran .text-ban1{
+        font-size: 50px;
+        
+    }
+
+    .fran-der{
+        margin: 8vw 2vw 2vw 2vw;
+    }
+
+    .fran-der p{
+        font-size: 19px;
+        
+    }
+
+
 }
 
 @media(max-width:1199px) and (min-width:901px){
+    #boton{
+        visibility:hidden;
+        display:none;
+    }
+
     .enun{
         margin: 18vw 32vw 32vw 32vw;
 
@@ -416,6 +533,9 @@ body{
         width: 20vw; 
     }
 
+    .card .tit{
+        margin-bottom: 2vw;
+    }
 
     .card i{
         margin-top: 1rem;
@@ -436,6 +556,19 @@ body{
         font-size: 22px;
     }
 
+    .who .texto .display-5{
+        font-size: 32px;
+    }
+
+    .fran-der{
+        margin: 4vw 2vw 2vw 2vw;
+    }
+
+    .fran-der p{
+        font-size: 19px;
+        
+    }
+
 
 }
 
@@ -443,15 +576,65 @@ body{
 
 
 @media(max-width:900px) and (min-width:751px){
+    .menus span{
+        font-size: 18px;
+    }
+    
+    #boton{
+        visibility:hidden;
+        display:none;
+    }
     .enun{
         margin: 18vw 30vw 30vw 30vw;
-
     }
     .enun h1{
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
-
     }
+
+    .who .texto .display-5{
+        font-size: 25px;
+    }
+
+    .card i{
+        font-size: 35px;
+    }
+
+    .card{
+        width: 20vw;
+        margin-bottom: 3vw;
+    }
+
+    .califica h4{
+        font-size: 28px;
+    }
+
+
+    .card .tit{
+        margin-bottom: 2vw;
+    }
+
+    .card h5{
+        font-size: 25px;
+    }
+
+    .who .texto .display-5{
+        font-size: 32px;
+    }
+
+    .fran-der{
+        margin: 4vw 2vw 2vw 2vw;
+    }
+
+    .fran-der h1{
+        font-size: 35px;
+    }
+
+    .fran-der p{
+        font-size: 16px;
+        
+    }
+
 }
 
 @media(max-width:750px) and (min-width:551px){
@@ -474,7 +657,49 @@ body{
 
     }
 
+    .fran{
+        flex-direction: column;
+    }
 
+    .card i{
+        font-size: 40px;
+    }
+
+    .card{
+        width: 20vw;
+    }
+
+    .card h5{
+        font-size: 18px;
+    }
+
+    .card .tit {
+        margin-bottom: 2vw;
+    }
+
+    .fran img{
+        width: 100%;
+    }
+    .who .texto .display-5{
+        font-size: 25px;
+    }
+    .card .card-title h5{
+        font-size: 10px;
+        font-family: 'Manrope', sans-serif;
+
+    }
+    .fran .fran-der{
+        order:2;
+    }
+
+    .fran .img-fluid1{
+        align-content: flex-start;
+        order:1;
+    }
+
+    .fran-der{
+        margin: 5% 5vw 5vw 5vw;
+    }
 }
 
 
@@ -508,35 +733,72 @@ body{
 
     .bloque{
         margin: 10px;
-        gap:10px;
+        gap:3vw;
     }
 
+    .califica h4{
+        padding-top: 4vw;
+    }
+
+    
+
     .card{ 
-        width: 10rem; 
+        width: 31vw; 
+        height: auto;
+        margin: 3vw;
     }
 
     .card i{
         margin-top: 1rem;
-        font-size: 20px;
+        font-size: 30px;
     }
 
-    .card-title{
-        font-size: 15px;
-        
+    .card-title h5{
+        font-size: 10px;
         margin-top: 10px;
+    }
+
+    .card .tit {
+        margin-bottom: 4vw;
     }
 
     .card .tit h3{
         border-radius: 100%;
-        font-size: 20px;
+        font-size: 28px;
     }
 
-    .card .card-text{
-        font-size: 12px;
-    }
 
     #des{
         font-size: 13px;
+    }
+
+    .who .texto .display-5{
+        font-size: 28px;
+        padding-top: 1vw;
+        margin-bottom: 2vw;
+    }
+    
+    .fran .fran-der{
+        order:2;
+    }
+
+    .fran .img-fluid1{
+        align-content: flex-start;
+        order:1;
+    }
+
+    .fran .text-ban1{
+        font-size: 35px;
+        
+    }
+
+    .fran-der{
+        margin: 3vw 3vw 3vw 3vw;
+    }
+
+    .fran-der p{
+        font-size: 18px;
+        
     }
 
 }
@@ -553,8 +815,8 @@ body{
     }
 
     .califica h4{
-        font-size: 16px;
-        padding-top: 2vw;
+        font-size: 17px;
+        padding-top: 4vw;
     }
 
     #slider{
@@ -589,19 +851,24 @@ body{
         margin: 5px;
     }
 
-    .card{ 
-        width: 42vw; 
+    .card{
+        margin:2vw; 
+        width: 32vw; 
     }
 
 
     .card i{
         margin-top: 1rem;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .card h5{
         margin-top: 5px;
         font-size: 14px;
+    }
+
+    .card .tit {
+        margin-bottom: 4vw;
     }
 
     .card .tit h3{
@@ -615,6 +882,30 @@ body{
 
     #des{
         font-size: 11px;
+    }
+
+    .who .texto .display-5{
+        font-size: 20px;
+    }
+
+    .fran .text-ban1{
+        font-size: 28px;
+        
+    }
+
+    .fran-der{
+        margin: 3vw 3vw 3vw 3vw;
+        order:2;
+    }
+
+    .fran-der p{
+        font-size: 14px;
+        
+    }
+
+    .fran .img-fluid1{
+        align-content: flex-start;
+        order:1;
     }
 
 }

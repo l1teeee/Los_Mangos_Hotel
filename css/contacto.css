@@ -213,7 +213,6 @@ body{
 .con{
     display: flex;
     flex-direction: row;
-    height: auto;
     border-radius: 15px;
     margin: 1vw 2vw 2vw 2vw;
 }
@@ -223,28 +222,30 @@ body{
     
 }
 
-.mapa iframe{
-    border-radius: 15px 0px 0px 15px;
-}
+
 
 .formu{
-    background-color: #027373;
-    padding: 1vw 1vw 1vw 1vw;
-    border-radius: 0px 15px 15px 0px;
+    background-color: #333C83;
 }
 
 .formu #seg{
     margin-top: 1vw;
 }
 
+.col-md-6{
+    color: #DBF6E9;
+}
+
+.col-12{
+    color: #DBF6E9;
+}
+
 
 .formu .pos h4{
     font-family: 'DM Sans', sans-serif;
-    color: #000000;
+    color: #DBF6E9;
     margin: 20px;
-    font-size: 23px;
     text-align: center;
-    margin: 3vw 3vw;
 }
 
 .formu .form-label{
@@ -254,7 +255,8 @@ body{
 }
 
 .infoma{
-    margin-top: 3vw;
+    margin-top: 2vw;
+    color: #DBF6E9;
 }
 
 .info{
@@ -266,11 +268,7 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 
-.info i{
-    padding-top: 3px;
-    padding-right: 10px;
-    font-size: 22px;
-}
+
 
 .info1{
     margin-left: 1vw;
@@ -280,11 +278,23 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 
-.info1 i{
-    padding-top: 3px;
-    padding-right: 10px;
-    font-size: 22px;
+footer{
+    background-color:   #94abbd;
+    justify-content: space-between;
 }
+
+footer .fo i{
+    color: #31326F;
+    font-size: 24px;
+    padding:10px;
+}
+
+footer .fo i:hover{
+    opacity: 0.20;
+    transition: 1s;
+}
+
+
 
 
 
@@ -321,6 +331,41 @@ body{
         display:none;
     }
 
+    .info i{
+        padding-top: 3px;
+        padding-right: 10px;
+        font-size: 22px;
+    }
+
+    .info1 i{
+        padding-top: 3px;
+        padding-right: 10px;
+        font-size: 22px;
+    }
+    
+
+    .mapa iframe{
+        border-radius: 15px 0px 0px 15px;
+        height: 55vw;
+    }
+    
+    .formu{
+        padding: 1vw 1vw 1vw 1vw;
+        border-radius: 0px 15px 15px 0px;
+    }
+
+    .formu .pos h4{
+        font-family: 'DM Sans', sans-serif;
+        margin: 20px;
+        margin: 3vw 3vw;
+    }
+
+    #bot{
+        margin-top: 1vw;
+    }
+
+    
+
 
 }
 
@@ -329,11 +374,6 @@ body{
         visibility:hidden;
         display:none;
     }
-
-    .enun{
-        margin: 18vw 32vw 32vw 32vw;
-
-    }
     .enun h1{
         font-size: 30px;
         text-align: center;
@@ -341,6 +381,31 @@ body{
 
     .menus span{
         font-size: 25px;
+    }
+
+    .mapa iframe{
+        width: 55vw;
+        height: 100vw;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    .formu{
+        width: 40vw;
+        padding: 1vw 1vw 1vw 1vw;
+        border-radius: 0px 15px 15px 0px;
+    }
+    
+    #bot{
+        margin-top: 2vw;
+    }
+
+    .informa{
+        margin-top: 2vw;
+    }
+
+    .infoma i{
+        margin-top: 8px;
+        margin-right: 8px;
     }
 
     
@@ -356,10 +421,102 @@ body{
         font-size: 18px;
     }
     
-    #boton{
+
+    header #logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .menus{
         visibility:hidden;
         display:none;
     }
+
+    .con{
+        flex-direction: column;
+    }
+
+    .con .mapa iframe{
+        border-radius: 12px;
+        width: 100%;
+        height: 60vw;
+
+    }
+
+    .con .formu .pos h4{
+        font-size: 25px;
+        
+    }
+
+    .col-md-6 input{
+        margin: 15px;
+        width: 80%;
+    }
+
+    .form-label{
+        margin-left:2vw;
+    }
+
+    .formu{
+        border-radius: 12px;
+    }
+
+    .col-12 label{
+        font-size: 18px;
+        margin: 15px;
+    }
+
+
+    .col-12 #exampleFormControlTextarea1{
+        width: 90%;
+        margin: 15px;
+    }
+
+    .formu .pos h4{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .formu #bot{
+        margin-top: 1vw;
+        margin-left: 2vw;
+    }
+
+    .infoma{
+        margin: 1vw;
+    }
+
+    .info{
+        margin-left: 4vw;
+        margin-top: 4vw;
+    }
+
+    .info1{
+        margin-left: 4vw;
+        margin-top: 4vw;
+    }
+
+    .info p{
+        font-size: 16px;
+    }
+
+    .info1 p{
+        font-size: 16px;
+    }
+
+    .info i{
+        padding-top: 4px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+
+    .info1 i{
+        padding-top: 4px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+
+    
 
 }
 
@@ -372,6 +529,107 @@ body{
     #slider{
         margin-top: 3vw;
     }
+
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+
+    header #logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+
+    header span i{
+        font-size: 20px;
+
+    }
+
+    .con{
+        flex-direction: column;
+    }
+
+    .con .mapa iframe{
+        border-radius: 12px;
+        width: 100%;
+        height: 80vw;
+
+    }
+
+    .formu h4{
+        font-size: 13px;
+        
+    }
+
+    .col-md-6{
+        margin: 15px;
+    }
+
+    .formu{
+        border-radius: 12px;
+    }
+
+    .col-12 label{
+        font-size: 18px;
+        margin: 15px;
+    }
+
+
+    .col-12 #exampleFormControlTextarea1{
+        width: 90%;
+        margin: 15px;
+    }
+
+    .formu .pos h4{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .formu #bot{
+        margin-top: 1vw;
+        margin-left: 4vw;
+    }
+
+    .infoma{
+        margin: 1vw;
+    }
+
+    .info{
+        margin-left: 4vw;
+        margin-top: 4vw;
+    }
+
+    .info1{
+        margin-left: 4vw;
+        margin-top: 4vw;
+    }
+
+    .info p{
+        font-size: 16px;
+    }
+
+    .info1 p{
+        font-size: 16px;
+    }
+
+    .info i{
+        padding-top: 4px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+
+    .info1 i{
+        padding-top: 4px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+
+
 }
 
 
@@ -380,6 +638,102 @@ body{
         visibility:hidden;
         display:none;
     }
+
+    header #logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+
+    header span i{
+        font-size: 20px;
+
+    }
+
+    .con{
+        flex-direction: column;
+    }
+
+    .con .mapa iframe{
+        border-radius: 12px;
+        width: 100%;
+        height: 80vw;
+
+    }
+
+    .formu h4{
+        font-size: 13px;
+        
+    }
+
+    .col-md-6{
+        margin: 15px;
+    }
+
+    .formu{
+        border-radius: 12px;
+    }
+
+    .col-12 label{
+        font-size: 18px;
+        margin: 15px;
+    }
+
+
+    .col-12 #exampleFormControlTextarea1{
+        width: 90%;
+        margin: 15px;
+    }
+
+    .formu .pos h4{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .formu #bot{
+        margin-top: 1vw;
+        margin-left: 4vw;
+    }
+
+    .infoma{
+        margin: 1vw;
+    }
+
+    .info{
+        margin-left: 4vw;
+        margin-top: 4vw;
+    }
+
+    .info1{
+        margin-left: 4vw;
+        margin-top: 4vw;
+    }
+
+    .info p{
+        font-size: 16px;
+    }
+
+    .info1 p{
+        font-size: 16px;
+    }
+
+    .info i{
+        padding-top: 4px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+
+    .info1 i{
+        padding-top: 4px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+
+
 }
 
 @media(max-width:378px) and (min-width:200px){
@@ -396,5 +750,84 @@ body{
     header span i{
         font-size: 20px;
 
+    }
+
+    .con{
+        flex-direction: column;
+    }
+
+    .con .mapa iframe{
+        border-radius: 12px;
+        width: 100%;
+        height: 80vw;
+
+    }
+
+    .formu h4{
+        font-size: 13px;
+        
+    }
+
+    .col-md-6{
+        margin: 15px;
+    }
+
+    .formu{
+        border-radius: 12px;
+    }
+
+    .col-12 label{
+        font-size: 18px;
+        margin: 15px;
+    }
+
+
+    .col-12 #exampleFormControlTextarea1{
+        width: 90%;
+        margin: 15px;
+    }
+
+    .formu .pos h4{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .formu #bot{
+        margin-top: 1vw;
+        margin-left: 4vw;
+    }
+
+    .infoma{
+        margin: 1vw;
+    }
+
+    .info{
+        margin-left: 4vw;
+        margin-top: 4vw;
+    }
+
+    .info1{
+        margin-left: 4vw;
+        margin-top: 4vw;
+    }
+
+    .info p{
+        font-size: 16px;
+    }
+
+    .info1 p{
+        font-size: 16px;
+    }
+
+    .info i{
+        padding-top: 4px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+
+    .info1 i{
+        padding-top: 4px;
+        padding-right: 10px;
+        font-size: 18px;
     }
 }

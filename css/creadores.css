@@ -1,0 +1,779 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: #DBF6E9;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: #31326F;
+    border-radius: 5px;
+}
+
+/*Header*/
+header{
+    display: flex;
+    padding: 14px 14px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #78c7ca;
+}
+
+header #logo img{
+    width: 60px;
+    height: 60px;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+header #logo{
+    margin-left: 10px;
+    justify-content: center;
+}
+
+header span{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+header span i{
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #31326F;
+    
+}
+    
+header span i:hover{
+    opacity: 0.40;
+    transition: 0.5s;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgb(198, 243, 221);
+    background-color: rgb(219, 246, 233, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #31326F;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #73b9bb;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/*FIN DE ARREGLAR EL MENU HAMBURGUESA */
+
+/*BODY*/
+
+.line{
+    height: 1.5px;
+    background-color: #027373;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.line1{
+    margin-top: 1vw;
+    height: 2px;
+    background-color: #027373;
+}
+
+body{
+    background-color: #c6deec;
+}
+
+.menus a{
+    text-decoration: none;
+    color: #2f448e;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.menus i{
+    font-size: 24px;
+}
+
+.menus a span:first-child {
+    display: inline-block;
+}
+
+.menus a{
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+
+.menus a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+}
+
+.menus a span {
+    transition: transform 0.2s ease-out;
+  }
+   
+  .menus a:hover span:first-child {
+    transform: translateY(100%);
+  }
+   
+  .menus a:hover span:last-child {
+    transform: none;
+}
+
+.menus[data-animation="to-top"] a span:last-child {
+    transform: translateY(100%);
+}
+
+.menus[data-animation="to-top"] a:hover span:first-child {
+    transform: translateY(-100%);
+}
+   
+.menus[data-animation="to-right"] a span:last-child {
+    transform: translateX(-100%);
+}
+   
+.menus[data-animation="to-right"] a:hover span:first-child {
+    transform: translateX(100%);
+}
+   
+.menus[data-animation="to-left"] a span:last-child {
+    transform: translateX(100%);
+}
+   
+.menus[data-animation="to-left"] a:hover span:first-child {
+    transform: translateX(-100%);
+}
+
+.menus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #BBDDF2;
+    margin-top: vw;
+}
+
+.perfil-1{
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.perfil-1 .informacion{
+    float: right;
+    margin-top: 110px;
+    margin-right: 200px;
+}
+
+.perfil-1 img{
+    width: 400px;
+    height: 500px;
+    margin-left: 150px;
+    border: 15px solid #2f44be;
+    border-radius: 5px;
+}
+
+.perfil-1 h2{
+    font-size: 35px;
+}
+
+.perfil-1 li{
+    font-size: 22px;
+}
+
+.perfil-2{
+    background-color: #2f44be;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+.perfil-2 .informacion{
+    float: left;
+    margin-top: 100px;
+    margin-left: 120px;
+    color: white;
+}
+
+.perfil-2 img{
+    width: 400px;
+    height: 500px;
+    border: 15px solid #BBDDF2;
+    margin-left: 180px;
+    border-radius: 5px;
+    
+}
+
+.perfil-2 h2{
+    font-size: 35px;
+}
+
+.perfil-2 li{
+    font-size: 22px;
+}
+
+/*FIN DEL BODY*/
+
+/*FOTTER*/
+footer{
+    background-color:   #94abbd;
+    justify-content: space-between;
+}
+
+footer .fo i{
+    color: #31326F;
+    font-size: 24px;
+    padding:10px;
+}
+
+footer .fo i:hover{
+    opacity: 0.20;
+    transition: 1s;
+}
+
+/*HEADER MENU*/
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+}
+
+/*EDICION PARA DISPOSITIVOS TABLES*/
+
+@media(max-width:2599px) and (min-width:1200px){
+    
+    .menus span{
+        font-size: 20px;
+    }
+
+    #boton{
+        visibility:hidden;
+        display:none;
+    }
+    .perfil-1 img{
+        margin-left: 80px;
+    }
+
+    .perfil-1 .informacion{
+        display: inline;
+        margin-top: 80px;
+        margin-right: 130px;
+        width: 450px;
+    }
+
+    .perfil-2 .informacion{
+        display: inline;
+        margin-top: 50px;
+        margin-left: 80px;
+        width: 450px;
+    }
+
+
+}
+
+@media(max-width:1199px) and (min-width:901px){
+    #boton{
+        visibility:hidden;
+        display:none;
+    }
+
+    .menus span{
+        font-size: 25px;
+    }
+
+    .perfil-1{
+        max-width:1199px;
+        min-width:901px;
+        height: 500px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    .perfil-2{
+        max-width:1199px;
+        min-width:751px;
+        height: 550px;
+        margin-bottom: 25px;
+    }
+    .perfil-1 img{
+        width: 350px;
+        height: 450px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .perfil-1 .informacion{
+        display: inline;
+        margin-top: 80px;
+        margin-right: 30px;
+        width: 450px;
+    }
+
+    .perfil-1 h2{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .perfil-2 img{
+        float: right;
+        width: 350px;
+        height: 450px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .perfil-2 .informacion{
+        display: inline;
+        margin-top: 50px;
+        margin-left: 30px;
+        width: 450px;
+    }
+
+
+    
+
+
+}
+
+@media(max-width:900px) and (min-width:751px){
+    .menus span{
+        font-size: 18px;
+    }
+
+    #boton{
+        visibility:hidden;
+        display:none;
+    }
+
+    .perfil-1{
+        max-width:900px;
+        min-width:751px;
+        height: 500px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    .perfil-2{
+        max-width:900px;
+        min-width:751px;
+        height: 500px;
+        margin-bottom: 25px;
+        padding: 25px;
+    }
+
+    .perfil-1 img{
+        width: 250px;
+        height: 400px;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+    .perfil-2 img{
+        float: right;
+        width: 250px;
+        height: 400px;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 20px;
+
+    }
+
+    .perfil-1 .informacion{
+        display: inline;
+        margin-top: 80px;
+        margin-right: 60px;
+        width: 380px;
+    }
+
+    .perfil-2 .informacion{
+        float: left;
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 380px;
+    }
+    
+    .perfil-1 h2{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .perfil-2 h2{
+        font-size: 35px;
+    }
+    
+    .perfil-1 li{
+        font-size: 22px;
+    }
+    .perfil-2 li{
+        font-size: 22px;
+    }
+    
+    
+
+}
+
+
+/*FIN DEEDICION PARA DISPOSITIVOS TABLES*/
+
+/* DISEÑOS PARA CELULARES*/
+
+
+/*MEDIA PARA SUFERFACE DUO */
+
+
+@media(max-width:540px) and (min-width:531px){
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+    .perfil-1{
+        max-width:540px;
+        min-width:531px;
+        height: 700px;
+        margin-bottom: 50px;
+    }
+
+    .perfil-2{
+        background-color: #2f44be;
+        max-width:540px;
+        min-width:531px;
+        height: 750px;
+    }
+
+    .perfil-1 img{
+        display: block;
+        width: 250px;
+        height: 300px;
+        margin-left: 140px;
+        border: 15px solid #2f44be;
+        border-radius: 5px;
+    }
+
+    .perfil-2 img{
+        width: 250px;
+        height: 300px;
+        margin-left: 110px;
+        border-radius: 8px;
+        display: block;
+    }
+
+    .perfil-1 .informacion{
+        float: left;
+        margin-top: 20px;
+        margin-left:100px;
+        width: 320px;
+    }
+
+    .perfil-2 .informacion{
+        display: block;
+        float: right;
+        margin-top: 20px;
+        margin-right:80px;
+        width: 330px;
+    }
+
+    .perfil-1 h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .perfil-1 li{
+        font-size: 20px;
+    }
+
+    .perfil-2 h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .perfil-2 li{
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+/*FIN DEL MEDIA PARA SUFERFACE DUO*/
+
+@media(max-width:530px) and (min-width:379px){
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+
+    .perfil-1{
+        max-width:550px;
+        min-width:379px;
+        height: 700px;
+        margin-bottom: 50px;
+    }
+
+    .perfil-2{
+        max-width:550px;
+        min-width:379px;
+        height: 750px;
+    }
+
+    .perfil-1 img{
+        display: block;
+        width: 250px;
+        height: 300px;
+        margin-left: 80px;
+    }
+
+    .perfil-2 img{
+        width: 250px;
+        height: 300px;
+        margin-left: 50px;
+        display: block;
+    }
+
+    .perfil-1 .informacion{
+        display: block;
+        float: left;
+        margin-top: 20px;
+        margin-left:40px;
+        width: 320px;
+    }
+
+    .perfil-2 .informacion{
+        display: block;
+        float: right;
+        margin-top: 20px;
+        margin-left:90px;
+        width: 330px;
+    }
+
+    .perfil-1 h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .perfil-1 li{
+        font-size: 20px;
+    }
+
+    .perfil-2 h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .perfil-2 li{
+        font-size: 20px;
+    }
+    
+}
+
+
+/*MEDIA PARA LOS OTROS DISPOSITIVOS*/
+
+@media(max-width:378px) and (min-width:279px){
+    header #logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .menus{
+        visibility:hidden;
+        display:none;
+    }    
+
+    header span i{
+        font-size: 20px;
+
+    }
+    .perfil-1{
+        max-width:378px;
+        min-width:200px;
+        height: 620px;
+        margin-bottom: 60px;
+    }
+
+    .perfil-2{
+        max-width:378px;
+        min-width:200px;
+        height: 720px;
+    }
+
+    .perfil-1 img{
+        display: block;
+        width: 250px;
+        height: 300px;
+        margin-left: 60px;
+    }
+
+    .perfil-2 img{
+        width: 250px;
+        height: 300px;
+        margin-left: 38px;
+        display: block;
+    }
+
+    .perfil-1 .informacion{
+        display: block;
+        float: left;
+        margin-top: 20px;
+        margin-left:40px;
+        width: 300px;
+    }
+
+    .perfil-2 .informacion{
+        display: block;
+        float: right;
+        margin-top: 20px;
+        margin-left:40px;
+        width: 300px;
+    }
+
+    .perfil-1 h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .perfil-1 li{
+        font-size: 15px;
+    }
+
+    .perfil-2 h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .perfil-2 li{
+        font-size: 15px;
+    }
+
+}
+
+/* MEDIAS PARA GALAXI FOLD*/
+
+@media(max-width:280px) and (min-width:100px){
+    header #logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .menus{
+        visibility:hidden;
+        display:none;
+    }    
+
+    header span i{
+        font-size: 20px;
+
+    }
+    .perfil-1{
+        max-width:288px;
+        min-width:100px;
+        height: 700px;
+        margin-bottom: 60px;
+    }
+
+    .perfil-2{
+        max-width:280px;
+        min-width:100px;
+        height: 780px;
+    }
+
+    .perfil-1 img{
+        display: block;
+        width: 200px;
+        height: 300px;
+        margin-left: 40px;
+    }
+
+    .perfil-2 img{
+        width: 200px;
+        height: 300px;
+        margin-left: 15px;
+        display: block;
+    }
+
+    .perfil-1 .informacion{
+        display: block;
+        float: left;
+        margin-top: 20px;
+        margin-left:40px;
+        width: 220px;
+    }
+
+    .perfil-2 .informacion{
+        display: block;
+        float: right;
+        margin-top: 20px;
+        margin-left:30px;
+        width: 220px;
+    }
+
+    .perfil-1 h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .perfil-1 li{
+        font-size: 15px;
+    }
+
+    .perfil-2 h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .perfil-2 li{
+        font-size: 15px;
+    }
+
+}
+

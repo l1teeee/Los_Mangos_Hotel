@@ -1,0 +1,536 @@
+
+/*Fuentes que se pueden usar
+font-family: 'DM Sans', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+Colores
+#FFC93C - Amarillo
+#DBF6E9 - celeste
+#9DDFD3 - celeste oscuro
+#31326F - azul
+*/
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: #DBF6E9;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: #31326F;
+    border-radius: 5px;
+}
+
+/*Header*/
+header{
+    display: flex;
+    padding: 14px 14px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #78c7ca;
+}
+
+header #logo img{
+    width: 60px;
+    height: 60px;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+header #logo{
+    margin-left: 10px;
+    justify-content: center;
+}
+
+header span{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+header span i{
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #31326F;
+    
+}
+    
+header span i:hover{
+    opacity: 0.40;
+    transition: 0.5s;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgb(198, 243, 221);
+    background-color: rgb(219, 246, 233, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #31326F;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #73b9bb;
+}
+
+
+
+
+
+
+
+/*Header*/
+
+/*Body*/
+
+
+
+.line{
+    height: 1.5px;
+    background-color: #027373;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.line1{
+    margin-top: 1vw;
+    height: 2px;
+    background-color: #027373;
+}
+
+body{
+    background-color: #a2c1d8;
+}
+
+
+.menus a{
+    text-decoration: none;
+    color: #2f448e;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.menus i{
+    font-size: 24px;
+}
+
+.menus a span:first-child {
+    display: inline-block;
+}
+
+.menus a{
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+   
+.menus a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+}
+
+.menus a span {
+    transition: transform 0.2s ease-out;
+  }
+   
+  .menus a:hover span:first-child {
+    transform: translateY(100%);
+  }
+   
+  .menus a:hover span:last-child {
+    transform: none;
+}
+
+.menus[data-animation="to-top"] a span:last-child {
+    transform: translateY(100%);
+}
+   
+.menus[data-animation="to-top"] a:hover span:first-child {
+    transform: translateY(-100%);
+}
+   
+.menus[data-animation="to-right"] a span:last-child {
+    transform: translateX(-100%);
+}
+   
+.menus[data-animation="to-right"] a:hover span:first-child {
+    transform: translateX(100%);
+}
+   
+.menus[data-animation="to-left"] a span:last-child {
+    transform: translateX(100%);
+}
+   
+.menus[data-animation="to-left"] a:hover span:first-child {
+    transform: translateX(-100%);
+}
+
+.menus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #a2c1d8;
+    margin-top: vw;
+}
+
+.imagis{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: row;
+    
+}
+
+.sep{
+    background-color: #4981ac;
+}
+
+
+
+.barra{
+    width: 40%;
+    height: 5px;
+    background-color: #31326F;
+}
+
+
+#pala{
+    margin-left: 5vw;
+    margin-top: 1vw;
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.lateral{
+    justify-content: space-between;
+    margin-top: 1vw;
+}
+
+.dropdown{
+    margin-top: 5px;
+}
+
+
+#dropdownMenu2{
+    margin-top: 12px;
+    margin-left: 3vw;
+    width: 20vw;
+    background-color: #31326F;
+}
+
+.selector{
+    display: flex;
+    flex-direction: column;
+}
+
+.color{
+    background-color: #95D1CC;
+}
+
+.imagis{
+    background-color: #FAFFAF;
+    
+}
+
+.op{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15vw;
+}
+
+.cuartos{
+    display: flex;
+    flex-direction: row;
+    margin-left: 6vw;
+    gap: 2vw;
+    flex-wrap: wrap;
+
+}
+
+.snip1361 {
+    border-radius: 12px;
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 2vw 2vw 2vw 2vw;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+  .snip1361 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1361 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .snip1361 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #43919B;
+    padding: 15px 25px 65px;
+  }
+  .snip1361 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #43919B 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #43919B 100%);
+  }
+  .snip1361 h3,
+  .snip1361 p {
+    margin: 0 0 10px;
+  }
+  .snip1361 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .snip1361 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .snip1361 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .snip1361:hover figcaption,
+  .snip1361.hover figcaption {
+    top: 80px;
+  }
+  
+
+.card{
+    margin: 1vw;
+    border-radius: 18px;
+}
+
+.card img{
+    border-radius: 18px 18px 0px 0px;
+}
+
+.card-body .card-text{
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.card-body i{
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+
+
+
+
+footer{
+    z-index: 21;
+    background-color:   #94abbd;
+    justify-content: space-between;
+}
+
+footer .fo i{
+    color: #31326F;
+    font-size: 24px;
+    padding:10px;
+}
+
+footer .fo i:hover{
+    opacity: 0.20;
+    transition: 1s;
+}
+
+/*Body*/
+
+
+
+
+
+
+/*HEADER MENU*/
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+}
+
+@media(max-width:2599px) and (min-width:1200px){
+    .enun{
+        margin: 18% 18% 0px 30%;
+
+    }
+    .enun h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .menus span{
+        font-size: 20px;
+    }
+
+    #boton{
+        visibility:hidden;
+        display:none;
+    }
+
+    .imagis{
+        padding-bottom: 3vw;
+        height: auto;
+
+        
+    }
+
+    .imagis img{
+        margin-top: 2vw;
+        opacity: 20;
+        z-index: 20;
+        margin-left:6vw;
+        width: 25%;
+        border-radius: 12px;
+    }
+
+    .sep{
+        width: 12%;
+    }
+
+    .compra{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+
+@media(max-width:1199px) and (min-width:901px){
+    #boton{
+        visibility:hidden;
+        display:none;
+    }
+
+}
+
+
+
+
+@media(max-width:900px) and (min-width:751px){
+    .menus span{
+        font-size: 18px;
+    }
+    
+    #boton{
+        visibility:hidden;
+        display:none;
+    }
+
+}
+
+@media(max-width:750px) and (min-width:551px){
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+}
+
+
+@media(max-width:550px) and (min-width:379px){
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+
+    #slider{
+        margin-top: 3vw;
+    }
+
+}
+
+@media(max-width:378px) and (min-width:200px){
+    header #logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+
+    header span i{
+        font-size: 20px;
+
+    }
+
+}

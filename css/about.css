@@ -350,10 +350,9 @@ body{
   
 #headline {
     font-family: 'Manrope', sans-serif;
-    margin-left: 12vw;
+    
     vertical-align: center;
     position: absolute;
-    font-size: 5vw;
     transition: margin-left 0.2s;
     color: #070707;
 }
@@ -372,9 +371,7 @@ body{
     color: #070707;
 }
   
-#imagen:hover #descripcion {
-    margin:24vw 10vw 0px 15vw;
-}
+
 
 
 /*-----------------------------*/
@@ -538,7 +535,6 @@ body{
     min-width: 200px;
     height: 250px;
     background-color: #292929;
-    margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
     border: 2px solid rgba(7, 7, 7, 0.12);
@@ -576,7 +572,6 @@ body{
  
  .card .title {
     width: 100%;
-    margin: 0;
     text-align: center;
     margin-top: 30px;
     color: white;
@@ -585,7 +580,7 @@ body{
     letter-spacing: 4px;
  }
  
- .card .text {
+.card .text {
     width: 80%;
     margin: 0 auto;
     font-size: 13px;
@@ -597,34 +592,34 @@ body{
     opacity: 0;
     max-height:0;
     transition: all 0.3s ease;
- }
+}
  
- .card:hover {
+.card:hover {
     height: 270px;
- }
+}
  
- .card:hover .info {
-    height: 90%;
- }
+.card:hover .info {
+    height: 90%; 
+}
  
- .card:hover .text {
+.card:hover .text {
     transition: all 0.3s ease;
     opacity: 1;
     max-height:80px;
- }
+}
  
- .card:hover .icon {
+.card:hover .icon {
     background-position: -120px;
     transition: all 0.3s ease;
- }
+}
  
- .card:hover .icon i {
+.card:hover .icon i {
     background: linear-gradient(90deg, #FF7E7E, #FF4848);
     -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
     opacity: 1;
     transition: all 0.3s ease;
- }
+}
 
 
 /*-----------------------------*/
@@ -749,6 +744,11 @@ footer .fo i:hover{
         margin: 18% 18% 0px 30%;
 
     }
+
+    #headline{
+        font-size: 5vw;
+        margin-left: 12vw;
+    }
     .enun h1{
         font-size: 35px;
         text-align: center;
@@ -763,9 +763,7 @@ footer .fo i:hover{
         display:none;
     }
 
-    .card{
-        width: 15rem;
-    }
+    
 
     .card i{
         font-size: 60px;
@@ -795,6 +793,10 @@ footer .fo i:hover{
         font-size: 42px;
     }
 
+    #imagen:hover #descripcion{
+        margin:24vw 10vw 0px 15vw;
+    }
+
     .fran .text-ban1{
         font-size: 50px;
         
@@ -808,7 +810,6 @@ footer .fo i:hover{
         font-size: 19px;
         
     }
-
 
 }
 
@@ -879,6 +880,64 @@ footer .fo i:hover{
         
     }
 
+    
+
+    #headline{
+        font-size: 5vw;
+        margin-left: 8vw;
+    }
+
+    #descripcion{
+        font-size: 27px;
+    }
+    
+    #imagen:hover #headline {
+        margin:10vw 0PX 0px 29vw;
+    }
+
+
+
+    #headline1{
+        font-size: 4vw;
+        margin-left: 7vw;
+        
+    }
+    #imagen1:hover #headline1{
+        margin:14vw 0PX 2vw 6vw;
+    }
+
+    #imagen1:hover #descripcion1{
+        margin:20vw 0vw 2vw 1vw;
+    }
+
+    #descripcion1{
+        font-size: 20px;
+    }
+
+    #headline2{
+        font-size: 4vw;
+        margin-left: 7vw;
+        
+    }
+
+    #descripcion2{
+        font-size: 20px;
+    }
+    #imagen2:hover #headline2{
+        margin:14vw 0vw 5vw 13vw;
+    }
+
+    #imagen2:hover #descripcion2{
+        margin:20vw 0vw 2vw 1vw;
+    }
+      
+    #imagen:hover #descripcion {
+        margin:17vw 10vw 0px 15vw;
+    }
+
+
+
+
 
 }
 
@@ -945,6 +1004,60 @@ footer .fo i:hover{
         
     }
 
+    
+
+    #headline{
+        font-size: 5vw;
+        margin-left: 8vw;
+    }
+
+    #descripcion{
+        font-size: 16px;
+    }
+    
+    #imagen:hover #headline {
+        margin:10vw 0PX 0px 28vw;
+    }
+
+    #headline1{
+        font-size: 4vw;
+        margin-left: 7vw;
+        
+    }
+    #imagen1:hover #headline1{
+        margin:14vw 0PX 2vw 6vw;
+    }
+
+    #imagen1:hover #descripcion1{
+        margin:20vw 0vw 2vw 1vw;
+    }
+
+    #descripcion1{
+        font-size: 15px;
+    }
+
+    #headline2{
+        font-size: 4vw;
+        margin-left: 7vw;
+        
+    }
+
+    #descripcion2{
+        font-size: 15px;
+    }
+    #imagen2:hover #headline2{
+        margin:14vw 0vw 5vw 13vw;
+    }
+
+    #imagen2:hover #descripcion2{
+        margin:20vw 0vw 2vw 1vw;
+    }
+      
+    #imagen:hover #descripcion {
+        margin:17vw 10vw 0px 15vw;
+    }
+
+
 }
 
 @media(max-width:750px) and (min-width:551px){
@@ -965,6 +1078,59 @@ footer .fo i:hover{
         font-size: 20px;
         text-align: center;
 
+    }
+
+    
+
+    #headline{
+        font-size: 5vw;
+        margin-left: 8vw;
+    }
+
+    #descripcion{
+        font-size: 16px;
+    }
+    
+    #imagen:hover #headline {
+        margin:10vw 0PX 0px 28vw;
+    }
+
+    #headline1{
+        font-size: 4vw;
+        margin-left: 7vw;
+        
+    }
+    #imagen1:hover #headline1{
+        margin:9vw 0PX 0px 7vw;
+    }
+
+    #imagen1:hover #descripcion1{
+        margin:14vw 0vw 0px 2vw;
+    }
+
+    #descripcion1{
+        font-size: 15px;
+    }
+
+    #headline2{
+        font-size: 4vw;
+        margin-left: 7vw;
+        
+    }
+
+    #descripcion2{
+        font-size: 14px;
+    }
+    #imagen2:hover #headline2{
+        margin:6vw 0PX 0px 14vw;
+    }
+
+    #imagen2:hover #descripcion2{
+        margin:12vw 0vw 0px 2vw;
+    }
+      
+    #imagen:hover #descripcion {
+        margin:17vw 10vw 0px 15vw;
     }
 
     .fran{
@@ -1077,6 +1243,83 @@ footer .fo i:hover{
         font-size: 28px;
     }
 
+    
+
+    #headline{
+        font-size: 5vw;
+        margin-left: 8vw;
+        
+    }
+    #imagen:hover #headline {
+        margin:10vw 0PX 0px 28vw;
+    }
+
+    #headline1{
+        font-size: 4vw;
+        margin-left: 8vw;
+        
+    }
+    #imagen1:hover #headline1{
+        margin:9vw 0PX 0px 7vw;
+    }
+
+    #imagen1:hover #descripcion1{
+        margin:15vw 0vw 0px 2vw;
+    }
+
+    #descripcion1{
+        font-size: 11px;
+    }
+
+    #headline2{
+        font-size: 5vw;
+        margin-left: 8vw;
+        
+    }
+    #imagen2:hover #headline2{
+        margin:2vw 0PX 0px 12vw;
+    }
+
+    #imagen2:hover #descripcion2{
+        margin:8vw 0vw 0px 2vw;
+    }
+
+    #descripcion2{
+        font-size: 10.5px;
+    }
+
+      
+    #imagen:hover #descripcion {
+        margin:17vw 10vw 0px 15vw;
+    }
+
+    #headline{
+        
+        font-size: 5vw;
+        margin-left: 8vw;
+        
+    }
+
+    #imagen:hover #headline {
+        margin:10vw 0PX 0px 28vw;
+    }
+    
+
+      
+    #imagen:hover #descripcion {
+        margin:17vw 10vw 0px 15vw;
+    }
+
+    .bloque .card{
+        width: 10rem;
+    }
+
+
+    #descripcion{
+        font-size: 3vw;
+    }
+
+
 
     #des{
         font-size: 13px;
@@ -1117,6 +1360,63 @@ footer .fo i:hover{
     header #logo img{
         width: 40px;
         height: 40px;
+    }
+
+    #headline{
+        font-size: 5vw;
+        margin-left: 8vw;
+        
+    }
+    #imagen:hover #headline {
+        margin:10vw 0PX 0px 28vw;
+    }
+
+    #headline1{
+        font-size: 4vw;
+        margin-left: 8vw;
+        
+    }
+    #imagen1:hover #headline1{
+        margin:9vw 0PX 0px 7vw;
+    }
+
+    #imagen1:hover #descripcion1{
+        margin:15vw 0vw 0px 2vw;
+    }
+
+    #descripcion1{
+        font-size: 11px;
+    }
+
+    #headline2{
+        font-size: 5vw;
+        margin-left: 8vw;
+        
+    }
+    #imagen2:hover #headline2{
+        margin:2vw 0PX 0px 12vw;
+    }
+
+    #imagen2:hover #descripcion2{
+        margin:8vw 0vw 0px 2vw;
+    }
+
+    #descripcion2{
+        font-size: 10.5px;
+    }
+
+      
+    #imagen:hover #descripcion {
+        margin:17vw 10vw 0px 15vw;
+    }
+
+    .bloque .card{
+        width: 10rem;
+    }
+
+
+    #descripcion{
+        font-size: 3vw;
     }
 
     .menus{
@@ -1163,13 +1463,12 @@ footer .fo i:hover{
 
     .card{
         margin:2vw; 
-        width: 32vw; 
+        width: 15vw; 
     }
 
-
     .card i{
+        font-size: 50px;
         margin-top: 1rem;
-        font-size: 25px;
     }
 
     .card h5{

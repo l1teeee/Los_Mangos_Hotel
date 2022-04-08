@@ -226,6 +226,12 @@ body{
     
 }
 
+.op{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .sep{
     background-color: #4981ac;
 }
@@ -346,8 +352,8 @@ body{
     left: 0;
     width: 100%;
     height: 80px;
-    background-image: -webkit-linear-gradient(top, transparent 0%, #43919B 100%);
-    background-image: linear-gradient(to bottom, transparent 0%, #43919B 100%);
+    background-image: -webkit-linear-gradient(top, transparent 0%, #77c8d3 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #77c8d3 100%);
   }
   .snip1361 h3,
   .snip1361 p {

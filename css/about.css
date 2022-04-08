@@ -448,6 +448,11 @@ body{
     
 }
 
+#big{
+    font-size: 27px;
+    color: #070707;
+}
+
 #info2{
     position:absolute;
     overflow:hidden;

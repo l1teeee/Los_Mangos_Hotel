@@ -209,6 +209,10 @@ body{
     background-color: #a2c1d8;
 }
 
+#big{
+    font-size: 27px;
+    color: #070707;
+}
 
 .con{
     display: flex;

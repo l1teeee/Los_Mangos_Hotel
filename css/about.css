@@ -382,8 +382,7 @@ body{
 }
 
 #imagen1{
-    width: 50%;
-    height: 52vw;
+    
     background-size: cover;
     background-image: url("https://exp.cdn-hotels.com/hotels/10000000/9240000/9234300/9234264/b0160e56_z.jpg?impolicy=fcrop&w=1000&h=666&q=medium");
     
@@ -392,10 +391,10 @@ body{
 
   
 #info1{
-    position:absolute;
-    overflow:hidden;
     width: 50%;
     height: 52vw;
+    position:absolute;
+    overflow:hidden;
     background-color: #a4b9cac9;
     opacity:0;
     transition: opacity 0.6s;
@@ -415,9 +414,7 @@ body{
     color: #070707;
 }
   
-#imagen1:hover #headline1{
-    margin:18vw 0PX 0px 5vw;
-}
+
   
 #imagen1:hover #headline2{
     margin:18vw 0PX 0px 11vw;
@@ -434,9 +431,7 @@ body{
     color: #070707;
 }
   
-#imagen1:hover #descripcion1{
-    margin:24vw 10vw 0px 7vw;
-}
+
 
 /*-----------------------------*/
 
@@ -783,6 +778,22 @@ footer .fo i:hover{
         font-size: 32px;
     }
 
+
+    #imagen1{
+        width: 50%;
+        height: 52vw;
+        
+        
+    }
+
+    #imagen1:hover #descripcion1{
+        margin:24vw 10vw 0px 7vw;
+    }
+
+    #imagen1:hover #headline1{
+        margin:18vw 0PX 0px 4vw;
+    }
+
     .bloque{ 
         gap: 1vw;
         padding-bottom: 1vw;
@@ -885,6 +896,12 @@ footer .fo i:hover{
         
     }
 
+    #imagen1{
+        width: 50%;
+        height: 52vw;
+        
+        
+    }
     
 
     #headline{
@@ -892,9 +909,12 @@ footer .fo i:hover{
         margin-left: 8vw;
     }
 
-    #descripcion{
-        font-size: 27px;
+
+    #imagen1:hover #descripcion1{
+        margin:24vw 10vw 0px 7vw;
     }
+
+    
     
     #imagen:hover #headline {
         margin:10vw 0PX 0px 29vw;
@@ -915,19 +935,31 @@ footer .fo i:hover{
         margin:20vw 0vw 2vw 1vw;
     }
 
-    #descripcion1{
-        font-size: 20px;
-    }
-
+    
     #headline2{
         font-size: 4vw;
         margin-left: 7vw;
         
     }
 
-    #descripcion2{
-        font-size: 20px;
+    #descripcion{
+        font-size: 22px;
     }
+
+    #descripcion1{
+        font-size: 18px;
+        padding-left: 1vw;
+        padding-right: 2vw;
+    }
+
+
+    #descripcion2{
+        font-size: 18px;
+        padding-left: 1vw;
+        padding-right: 2vw;
+    }
+
+
     #imagen2:hover #headline2{
         margin:14vw 0vw 5vw 13vw;
     }
@@ -1016,9 +1048,6 @@ footer .fo i:hover{
         margin-left: 8vw;
     }
 
-    #descripcion{
-        font-size: 16px;
-    }
     
     #imagen:hover #headline {
         margin:10vw 0PX 0px 28vw;
@@ -1037,19 +1066,44 @@ footer .fo i:hover{
         margin:20vw 0vw 2vw 1vw;
     }
 
-    #descripcion1{
-        font-size: 15px;
-    }
-
     #headline2{
         font-size: 4vw;
         margin-left: 7vw;
         
     }
 
-    #descripcion2{
-        font-size: 15px;
+
+    #imagen1{
+        width: 50%;
+        height: 52vw;
+        
+        
     }
+
+
+
+
+
+    #descripcion{
+        font-size: 22px;
+    }
+
+    #descripcion1{
+        font-size: 18px;
+        padding-left: 1vw;
+        padding-right: 2vw;
+    }
+
+
+    #descripcion2{
+        font-size: 18px;
+        padding-left: 1vw;
+        padding-right: 2vw;
+    }
+
+
+
+
     #imagen2:hover #headline2{
         margin:14vw 0vw 5vw 13vw;
     }
@@ -1061,6 +1115,7 @@ footer .fo i:hover{
     #imagen:hover #descripcion {
         margin:17vw 10vw 0px 15vw;
     }
+    
 
 
 }
@@ -1085,16 +1140,39 @@ footer .fo i:hover{
 
     }
 
-    
+
+    #imagen1{
+        width: 50%;
+        height: 52vw;
+        
+        
+    }
+
+
+    #descripcion{
+        font-size: 16px;
+    }
+
+    #descripcion1{
+        font-size: 14px;
+        padding-left: 1vw;
+        padding-right: 2vw;
+    }
+
+
+    #descripcion2{
+        font-size: 14px;
+        padding-left: 1vw;
+        padding-right: 2vw;
+    }
+
+
 
     #headline{
         font-size: 5vw;
         margin-left: 8vw;
     }
 
-    #descripcion{
-        font-size: 16px;
-    }
     
     #imagen:hover #headline {
         margin:10vw 0PX 0px 28vw;
@@ -1113,18 +1191,11 @@ footer .fo i:hover{
         margin:14vw 0vw 0px 2vw;
     }
 
-    #descripcion1{
-        font-size: 15px;
-    }
 
     #headline2{
         font-size: 4vw;
         margin-left: 7vw;
         
-    }
-
-    #descripcion2{
-        font-size: 14px;
     }
     #imagen2:hover #headline2{
         margin:6vw 0PX 0px 14vw;
@@ -1248,10 +1319,80 @@ footer .fo i:hover{
         font-size: 28px;
     }
 
+    .long{
+        flex-direction: column;
+    }
+
+
+    #imagen1{
+        width: 100%;
+        height: 52vw;
+    }
+
+    #imagen2{
+        width: 100%;
+        height: 52vw;
+    }
+
+    #info1{
+        width: 100%;
+        height: 52vw;
+    }
+
+    #info2{
+        width: 100%;
+        height: 52vw;
+    }
+
+    #headline1{
+        font-family: 'Manrope', sans-serif;
+        margin-left: 10vw;
+    }
+
+
+    #imagen1:hover #headline1{
+        margin:12vw 0PX 0px 28vw;
+    }
+
+    #headline2{
+        font-family: 'Manrope', sans-serif;
+        margin-left: 10vw;
+    }
+
+
+    #imagen2:hover #headline2{
+        margin:12vw 0PX 0px 38vw;
+    }
+
+    #imagen2:hover #descripcion2{
+        margin:18vw 0PX 0px 4vw;
+    }
+
+
+    #descripcion1{
+        font-family: 'Manrope', sans-serif;
+        font-size: 15px;
+        padding-right:2vw;
+        margin-top: 5vw;
+    }
+
+
+    #descripcion{
+        font-size: 13px;
+    }
+
+
+
+    #descripcion2{
+        font-size: 13px;
+        padding-left: 1vw;
+        padding-right: 2vw;
+    }
+
     
 
     #headline{
-        font-size: 5vw;
+        font-size: 4vw;
         margin-left: 8vw;
         
     }
@@ -1265,42 +1406,28 @@ footer .fo i:hover{
         
     }
     #imagen1:hover #headline1{
-        margin:9vw 0PX 0px 7vw;
+        width: 100%;
     }
 
     #imagen1:hover #descripcion1{
-        margin:15vw 0vw 0px 2vw;
-    }
-
-    #descripcion1{
-        font-size: 11px;
+        margin:18vw 0vw 0px 4vw;
     }
 
     #headline2{
-        font-size: 5vw;
+        font-size: 4vw;
         margin-left: 8vw;
         
     }
-    #imagen2:hover #headline2{
-        margin:2vw 0PX 0px 12vw;
-    }
-
-    #imagen2:hover #descripcion2{
-        margin:8vw 0vw 0px 2vw;
-    }
-
-    #descripcion2{
-        font-size: 10.5px;
-    }
+    
 
       
     #imagen:hover #descripcion {
-        margin:17vw 10vw 0px 15vw;
+        margin:18vw 4vw 0px 4vw;
     }
 
     #headline{
         
-        font-size: 5vw;
+        font-size: 4vw;
         margin-left: 8vw;
         
     }
@@ -1310,19 +1437,12 @@ footer .fo i:hover{
     }
     
 
-      
-    #imagen:hover #descripcion {
-        margin:17vw 10vw 0px 15vw;
-    }
 
     .bloque .card{
         width: 10rem;
     }
 
 
-    #descripcion{
-        font-size: 3vw;
-    }
 
 
 
@@ -1366,12 +1486,6 @@ footer .fo i:hover{
         width: 40px;
         height: 40px;
     }
-
-    #headline{
-        font-size: 5vw;
-        margin-left: 8vw;
-        
-    }
     #imagen:hover #headline {
         margin:10vw 0PX 0px 28vw;
     }
@@ -1385,12 +1499,99 @@ footer .fo i:hover{
         margin:9vw 0PX 0px 7vw;
     }
 
-    #imagen1:hover #descripcion1{
-        margin:15vw 0vw 0px 2vw;
+
+    
+    .long{
+        flex-direction: column;
     }
 
+
+    #imagen1{
+        width: 100%;
+        height: 52vw;
+    }
+
+    #imagen2{
+        width: 100%;
+        height: 52vw;
+    }
+
+    #info1{
+        width: 100%;
+        height: 52vw;
+    }
+
+    #info2{
+        width: 100%;
+        height: 52vw;
+    }
+
+    #headline1{
+        font-family: 'Manrope', sans-serif;
+        margin-left: 10vw;
+    }
+
+
+    #imagen1:hover #headline1{
+        margin:12vw 0PX 0px 28vw;
+    }
+
+    #headline2{
+        font-family: 'Manrope', sans-serif;
+        margin-left: 10vw;
+    }
+
+
+    #imagen2:hover #headline2{
+        margin:11vw 4vw 0px 31vw;
+    }
+
+    #imagen2:hover #descripcion2{
+        margin:18vw 0PX 0px 4vw;
+    }
+
+
     #descripcion1{
-        font-size: 11px;
+        font-family: 'Manrope', sans-serif;
+        font-size: 15px;
+        padding-right:2vw;
+        margin-top: 5vw;
+    }
+
+
+    #descripcion{
+        font-size: 12px;
+    }
+
+
+
+    #descripcion2{
+        font-size: 12px;
+        padding-left: 1vw;
+        padding-right: 2vw;
+    }
+
+    
+
+    #headline{
+        font-size: 4vw;
+        margin-left: 8vw;
+    }
+    #imagen:hover #headline {
+        margin:10vw 0PX 0px 28vw;
+    }
+
+    #headline1{
+        font-size: 4vw;
+        margin-left: 8vw;
+        
+    }
+    #imagen1:hover #headline1{
+        width: 100%;
+    }
+
+    #imagen1:hover #descripcion1{
+        margin:18vw 0vw 0px 4vw;
     }
 
     #headline2{
@@ -1398,30 +1599,28 @@ footer .fo i:hover{
         margin-left: 8vw;
         
     }
-    #imagen2:hover #headline2{
-        margin:2vw 0PX 0px 12vw;
-    }
-
-    #imagen2:hover #descripcion2{
-        margin:8vw 0vw 0px 2vw;
-    }
-
-    #descripcion2{
-        font-size: 10.5px;
-    }
+    
 
       
     #imagen:hover #descripcion {
-        margin:17vw 10vw 0px 15vw;
+        margin:18vw 3vw 0px 4vw;
     }
+
+    #headline{
+        
+        font-size: 4vw;
+        margin-left: 8vw;
+        
+    }
+
+    #imagen:hover #headline {
+        margin:10vw 0PX 0px 28vw;
+    }
+    
+
 
     .bloque .card{
         width: 10rem;
-    }
-
-
-    #descripcion{
-        font-size: 3vw;
     }
 
     .menus{

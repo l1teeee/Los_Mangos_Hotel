@@ -62,13 +62,7 @@ header span{
     
 }
 
-header span i{
-    margin-right: 8px;
-    cursor: pointer;
-    font-size: 25px;
-    color: #31326F;
-    
-}
+
     
 header span i:hover{
     opacity: 0.40;
@@ -380,11 +374,6 @@ body{
     
 }
 
-.fran img{
-    width: 50%;
-    opacity: 0.90;
-
-}
 
 .fran .img-fluid{
     justify-content: flex-start;
@@ -499,6 +488,17 @@ footer .fo i:hover{
         
     }
 
+    
+    .fran .img-fluid{
+        width: 115%;
+        height: 33vw;
+    }
+
+    .fran .img-fluid1{
+        width: 158%;
+        height: 33vw;
+    }
+
 
 }
 
@@ -569,6 +569,16 @@ footer .fo i:hover{
         
     }
 
+    .fran .img-fluid{
+        width: 167%;
+        height: 33vw;
+    }
+
+    .fran .img-fluid1{
+        width: 193%;
+        height: 33vw;
+    }
+
 
 }
 
@@ -623,7 +633,7 @@ footer .fo i:hover{
     }
 
     .fran-der{
-        margin: 4vw 2vw 2vw 2vw;
+        margin: 5vw 2vw 4vw 2vw;
     }
 
     .fran-der h1{
@@ -633,6 +643,16 @@ footer .fo i:hover{
     .fran-der p{
         font-size: 16px;
         
+    }
+
+    .fran .img-fluid{
+        width: 217%;
+        height: 50vw;
+    }
+
+    .fran .img-fluid1{
+        width: 267%;
+        height: 43vw;
     }
 
 }
@@ -692,14 +712,26 @@ footer .fo i:hover{
         order:2;
     }
 
+    
+
+    .fran .img-fluid{
+        width: 189%;
+        height: 60vw;
+    }
+
     .fran .img-fluid1{
         align-content: flex-start;
         order:1;
+        width: 100%;
+        height: 60vw;
     }
 
     .fran-der{
-        margin: 5% 5vw 5vw 5vw;
+        margin: 5vw 2vw 1vw 2vw;
     }
+
+
+
 }
 
 
@@ -782,11 +814,6 @@ footer .fo i:hover{
         order:2;
     }
 
-    .fran .img-fluid1{
-        align-content: flex-start;
-        order:1;
-    }
-
     .fran .text-ban1{
         font-size: 35px;
         
@@ -799,6 +826,18 @@ footer .fo i:hover{
     .fran-der p{
         font-size: 18px;
         
+    }
+
+    .fran .img-fluid{
+        width: 189%;
+        height: 70vw;
+    }
+
+    .fran .img-fluid1{
+        align-content: flex-start;
+        order:1;
+        width: 100%;
+        height: 70vw;
     }
 
 }
@@ -906,6 +945,18 @@ footer .fo i:hover{
     .fran .img-fluid1{
         align-content: flex-start;
         order:1;
+    }
+
+    .fran .img-fluid{
+        width: 189%;
+        height: 80vw;
+    }
+
+    .fran .img-fluid1{
+        align-content: flex-start;
+        order:1;
+        width: 100%;
+        height: 80vw;
     }
 
 }

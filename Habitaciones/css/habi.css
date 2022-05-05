@@ -217,27 +217,17 @@ body{
     font-family: 'DM Sans', sans-serif;
 }
 
-#carouselExampleIndicators {
-    margin-left: 1vw;
-}
-
-#carouselExampleIndicators img{
-    border-radius: 5% 0% 0% 5%;
-}
 
 .info{
+    height: auto;
     margin-bottom: 1vw;
     background-color: #c5ddd1;
-    border-radius: 0% 5% 5% 0%;
 }
 
 .info h1{
     text-align: center;
 }
 
-#carouselExampleIndicators{
-    margin: 0vw 0vw 1vw 1vw;
-}
 
 .pros{
     display: flex;
@@ -315,7 +305,9 @@ body{
 }
 
 button{
-    margin:8px 0px 0px 1vw;
+    margin:10px;
+    font-size: 10px;
+    width: auto;
 }
 
 
@@ -390,13 +382,19 @@ footer .fo i:hover{
     }
 
     #carouselExampleIndicators{
-        width: 54%;
+        width: 60%;
         height: auto;
     }
 
+    #carouselExampleIndicators img{
+        width: 901px;
+        height: 676px;
+    }
+
+
 
     .info{
-        width: 43%;
+        width: 46%;
     }
 
 
@@ -440,6 +438,8 @@ footer .fo i:hover{
     .bañi .titu{
         font-size: 20px;
     }
+    
+
     
 
 

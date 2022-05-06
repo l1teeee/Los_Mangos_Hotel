@@ -213,20 +213,16 @@ body{
 
 
 .info h1{
-    margin-top: 16px;
     font-family: 'DM Sans', sans-serif;
+    text-align: center;
 }
 
 
 .info{
     height: auto;
-    margin-bottom: 1vw;
     background-color: #c5ddd1;
 }
 
-.info h1{
-    text-align: center;
-}
 
 
 .pros{
@@ -236,7 +232,6 @@ body{
 }
 
 .pros i{
-    font-size: 18px;
     color: #050620;
     margin-right: 5px;
 }
@@ -249,7 +244,7 @@ body{
 .metros{
     display: flex;
     flex-direction: row;
-    margin:18px 0px 0px 1vw;
+    margin:10px 0px 0px 1vw;
 }
 
 .metros h5{
@@ -259,7 +254,7 @@ body{
 .descrip{
     display: flex;
     flex-direction: column;
-    margin:18px 0px 0px 1vw;
+    margin:10px 0px 0px 1vw;
 }
 
 .descrip .descript{
@@ -281,9 +276,7 @@ body{
     flex-wrap: wrap;
 }
 
-.bañi .titu{
-    margin:8px 0px 0px 1vw;
-}
+
 
 .bañi .cosa{
     display: flex;
@@ -328,7 +321,7 @@ footer{
 
 footer .fo i{
     color: #31326F;
-    font-size: 24px;
+    font-size: 20px;
     padding:10px;
 }
 
@@ -383,15 +376,15 @@ footer .fo i:hover{
 
     #carouselExampleIndicators{
         width: 60%;
-        height: auto;
+        height: 42.4vw;
     }
 
     #carouselExampleIndicators img{
-        width: 901px;
-        height: 676px;
+        /*width: 901px;
+        height: 676px;*/
+        width: 25%;
+        height: 42.4vw;
     }
-
-
 
     .info{
         width: 46%;
@@ -399,13 +392,20 @@ footer .fo i:hover{
 
 
     .info h1{
-        font-size: 22px;
+        font-size: 30px;
+        margin-top: 10px;
     }
 
     .info h3{
-        font-size: 15px;
+        font-size: 16px;
         margin-top: 5px;
         gap: 12px;
+    }
+
+    .pros i{
+        font-size: 15px;
+        color: #050620;
+        margin-right: 5px;
     }
 
     .metros .tama{
@@ -413,9 +413,9 @@ footer .fo i:hover{
     }
 
     .metros h5{
-        margin-top: 5px;
+        margin-top: 2px;
         margin-left: 5px;
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .metros .ele{
@@ -437,19 +437,8 @@ footer .fo i:hover{
 
     .bañi .titu{
         font-size: 20px;
+        margin:8px 0px 0px 1vw;
     }
-    
-
-    
-
-
-
-
-
-    
-
-    
-
 
 }
 
@@ -463,7 +452,64 @@ footer .fo i:hover{
         text-align: center;
     }
 
-    
+    #carouselExampleIndicators img{
+        width: 20%;
+        height: 676px;
+    }
+
+    .info h1{
+        padding-top: 2vw;
+        font-size: 40px;
+    }
+
+    .pros i{
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .pros h3{
+        font-size: 20px;
+    }
+
+    .metros h5{
+        padding-top: 2px;
+        padding-left: 5px;
+    }
+
+    .metros .tama{
+        font-size: 20px;
+    }
+
+    .metros .ele{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .descrip .descript h5{
+        font-size: 19px;
+    }
+
+    .bañi .titu{
+        font-size: 20px;
+        margin:15px 0px 0px 1vw;
+    }
+
+    .bañi .cosa .columna1 h5{
+        font-size: 17px;
+    }
+
+    .bañi .cosa .columna2 h5{
+        font-size: 17px;
+    }
+
+    .descrip .descript .tamal{
+        font-size: 19px;
+    }
+
+    .descrip .descript h5{
+        font-size: 16px;
+    }
+
 
 
 }
@@ -485,6 +531,59 @@ footer .fo i:hover{
     .menus{
         visibility:hidden;
         display:none;
+    }
+
+    .info h1{
+        padding-top: 2vw;
+        font-size: 30px;
+    }
+
+    .pros i{
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .pros h3{
+        font-size: 18px;
+    }
+
+    .metros h5{
+        padding-top: 2px;
+        padding-left: 5px;
+    }
+
+    .metros .tama{
+        font-size: 20px;
+    }
+
+    .metros .ele{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .descrip .descript h5{
+        font-size: 19px;
+    }
+
+    .bañi .titu{
+        font-size: 20px;
+        margin:15px 0px 0px 1vw;
+    }
+
+    .bañi .cosa .columna1 h5{
+        font-size: 17px;
+    }
+
+    .bañi .cosa .columna2 h5{
+        font-size: 17px;
+    }
+
+    .descrip .descript .tamal{
+        font-size: 19px;
+    }
+
+    .descrip .descript h5{
+        font-size: 16px;
     }
     
 
@@ -519,6 +618,59 @@ footer .fo i:hover{
         font-size: 20px;
 
     }
+
+    .info h1{
+        padding-top: 2vw;
+        font-size: 29px;
+    }
+
+    .pros i{
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .pros h3{
+        font-size: 16px;
+    }
+
+    .metros h5{
+        padding-top: 2px;
+        padding-left: 5px;
+    }
+
+    .metros .tama{
+        font-size: 20px;
+    }
+
+    .metros .ele{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .descrip .descript h5{
+        font-size: 19px;
+    }
+
+    .bañi .titu{
+        font-size: 20px;
+        margin:15px 0px 0px 1vw;
+    }
+
+    .bañi .cosa .columna1 h5{
+        font-size: 17px;
+    }
+
+    .bañi .cosa .columna2 h5{
+        font-size: 17px;
+    }
+
+    .descrip .descript .tamal{
+        font-size: 19px;
+    }
+
+    .descrip .descript h5{
+        font-size: 16px;
+    }
 }
 
 
@@ -542,6 +694,67 @@ footer .fo i:hover{
         font-size: 20px;
 
     }
+
+
+    .info h1{
+        padding-top: 2vw;
+        font-size: 25px;
+    }
+
+    .pros i{
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .pros h3{
+        font-size: 15px;
+    }
+
+    .metros h5{
+        font-size: 19px;
+        padding-top: 2px;
+        padding-left: 5px;
+    }
+
+    .metros .tama{
+        font-size: 18px;
+        margin-left: 2vw;
+    }
+
+    .metros .ele{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .descrip .descript h5{
+        font-size: 19px;
+    }
+
+    .bañi .titu{
+        font-size: 18px;
+        margin:15px 0px 0px 3vw;
+    }
+
+    .bañi .cosa .columna1 h5{
+        font-size: 15px;
+        margin-left: 4vw;
+    }
+
+    .bañi .cosa .columna2 h5{
+        font-size: 15px;
+        margin-left: 4vw;
+    }
+
+    .descrip .descript .tamal{
+        font-size: 18px;
+        margin-left: 1vw;
+    }
+
+    .descrip .descript h5{
+        font-size: 16px;
+    }
+
+
 }
 
 @media(max-width:378px) and (min-width:200px){
@@ -558,4 +771,64 @@ footer .fo i:hover{
     header span i{
         font-size: 20px;
     }
+
+    .info h1{
+        padding-top: 2vw;
+        font-size: 24px;
+    }
+
+    .pros i{
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .pros h3{
+        font-size: 14px;
+    }
+
+    .metros h5{
+        font-size: 16px;
+        padding-top: 2px;
+        padding-left: 5px;
+    }
+
+    .metros .tama{
+        font-size: 16px;
+        margin-left: 2vw;
+    }
+
+    .metros .ele{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .descrip .descript h5{
+        font-size: 10px;
+    }
+
+    .bañi .titu{
+        font-size: 17px;
+        margin:15px 0px 0px 3vw;
+    }
+
+    .bañi .cosa .columna1 h5{
+        font-size: 14px;
+        margin-left: 4vw;
+    }
+
+    .bañi .cosa .columna2 h5{
+        font-size: 14px;
+        margin-left: 4vw;
+    }
+
+    .descrip .descript .tamal{
+        font-size: 14px;
+        margin-left: 2vw;
+    }
+
+    .descrip .descript h5{
+        font-size: 13px;
+    }
+
+
 }

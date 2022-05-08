@@ -273,6 +273,11 @@ body{
     background-color: #31326F;
 }
 
+.dropdown-menu a{
+    text-decoration: none;
+    color: #141414;
+}
+
 #suit{
     margin-top: 1vw;
     font-size: 50px;

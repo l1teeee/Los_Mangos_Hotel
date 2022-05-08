@@ -516,8 +516,12 @@ footer .fo i:hover{
         flex-wrap: wrap;
         justify-content: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-bottom: 1vw;
+    }
+
+    #dropdownMenu2{
+        width: 93%;
     }
 
 }
@@ -534,6 +538,9 @@ footer .fo i:hover{
         visibility:hidden;
         display:none;
     }
+    #dropdownMenu2{
+        width: 93%;
+    }
 
 }
 
@@ -541,6 +548,10 @@ footer .fo i:hover{
     .menus{
         visibility:hidden;
         display:none;
+    }
+
+    #dropdownMenu2{
+        width: 93%;
     }
 }
 
@@ -553,6 +564,10 @@ footer .fo i:hover{
 
     #slider{
         margin-top: 3vw;
+    }
+
+    #dropdownMenu2{
+        width: 93%;
     }
 
 }
@@ -571,6 +586,10 @@ footer .fo i:hover{
     header span i{
         font-size: 20px;
 
+    }
+
+    #dropdownMenu2{
+        width: 93%;
     }
 
 }

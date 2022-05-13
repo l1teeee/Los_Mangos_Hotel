@@ -249,10 +249,7 @@ body{
     color: #C4DDFF;
 }
 
-.perfil-2 img{
-    border: 10px solid #C4DDFF;
-    border-radius: 4px;
-}
+
 
 
 
@@ -368,6 +365,10 @@ footer .fo i:hover{
         height: 80%;
         margin-left: 12rem;
     }
+    .perfil-2 img{
+        border: 10px solid #C4DDFF;
+        border-radius: 4px;
+    }
 }
 
 @media(max-width:1199px) and (min-width:901px){
@@ -441,6 +442,11 @@ footer .fo i:hover{
         width: 25%;
         height: 90%;
         margin-left: 12rem;
+    }
+
+    .perfil-2 img{
+        border: 10px solid #C4DDFF;
+        border-radius: 4px;
     }
 
 
@@ -526,6 +532,11 @@ footer .fo i:hover{
         margin-left: 8rem;
     }
 
+    .perfil-2 img{
+        border: 10px solid #C4DDFF;
+        border-radius: 4px;
+    }
+
 }
 
 @media(max-width:750px) and (min-width:551px){
@@ -547,7 +558,7 @@ footer .fo i:hover{
 
     .perfil-1 .informacion h2{ 
         font-family: 'DM Sans', sans-serif;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .perfil-1 .informacion ul{
@@ -560,9 +571,9 @@ footer .fo i:hover{
     }
 
     .perfil-1 img{
-        width: 20%;
-        height: 60%;
-        margin-left: 5rem;
+        width: 30%;
+        height: 75%;
+        margin-left: 2rem;
         border: 10px solid #16003B;
         
     }
@@ -582,7 +593,7 @@ footer .fo i:hover{
 
     .perfil-2 .informacion h2{ 
         font-family: 'DM Sans', sans-serif;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .perfil-2 .informacion ul{
@@ -595,9 +606,14 @@ footer .fo i:hover{
     }
 
     .perfil-2 img{
-        width: 20%;
-        height: 82%;
-        margin-left: 8rem;
+        width: 30%;
+        height: 75%;
+        margin-left: 2rem;
+    }
+
+    .perfil-2 img{
+        border: 10px solid #C4DDFF;
+        border-radius: 4px;
     }
     
 }
@@ -609,12 +625,156 @@ footer .fo i:hover{
         display:none;
     }
 
+    .perfil-1 .perfil_sub{
+        margin: 1vw 1vw 1vw 1rem;
+        align-items: center;
+        align-content: center;
+    }
+
+    .perfil-1 .informacion{ 
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .perfil-1 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+    }
+
+    .perfil-1 .informacion ul{
+        margin-left: 2rem;
+    }
+
+    .perfil-1 .informacion li{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+
+    .perfil-1 img{
+        width: 30%;
+        height: 65%;
+        margin-left: 1rem;
+        border: 10px solid #16003B;
+        
+    }
+
+    /*-----------------------*/
+    
+    .perfil-2 .perfil_sub{
+        margin: 1vw 1vw 1vw 1rem;
+        align-items: center;
+        align-content: center;
+    }
+
+    .perfil-2 .informacion{ 
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .perfil-2 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 20px;
+    }
+
+    .perfil-2 .informacion ul{
+        margin-left: 2rem;
+    }
+
+    .perfil-2 .informacion li{
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .perfil-2 img{
+        width: 30%;
+        height: 65%;
+        margin-left: 1rem;
+    }
+
+    .perfil-2 img{
+        border: 10px solid #C4DDFF;
+        border-radius: 4px;
+    }
 }
 
 @media(max-width:378px) and (min-width:200px){
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
+
     header #logo img{
         width: 40px;
         height: 40px;
+    }
+
+    .perfil-1 .perfil_sub{  
+        align-items: center;
+        align-content: center;
+    }
+
+    .perfil-1 .informacion{ 
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .perfil-1 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 13px;
+    }
+
+    .perfil-1 .informacion ul{
+        margin-left: 1rem;
+    }
+
+    .perfil-1 .informacion li{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    .perfil-1 img{
+        width: 25%;
+        height: 58%;
+        margin-left: 10px;
+        border: 5px solid #16003B;
+        
+    }
+
+    /*-----------------------*/
+    
+    .perfil-2 .perfil_sub{
+        align-items: center;
+        align-content: center;
+    }
+
+    .perfil-2 .informacion{ 
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .perfil-2 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 13px;
+    }
+
+    .perfil-2 .informacion ul{
+        margin-left: 1rem;
+    }
+
+    .perfil-2 .informacion li{
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .perfil-2 img{
+        width: 25%;
+        height: 58%;
+        margin-left: 10px;
+    }
+
+    .perfil-2 img{
+        border: 5px solid #C4DDFF;
+        border-radius: 4px;
     }
 
 }

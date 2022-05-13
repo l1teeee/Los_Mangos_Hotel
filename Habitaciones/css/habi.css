@@ -36,7 +36,7 @@ header{
     padding: 14px 14px;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #78c7ca;
+    background-color: #A2D2FF;
 }
 
 header #logo img{
@@ -198,7 +198,7 @@ header span i:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #a2c1d8;
+    background-color: #F3F0D7;
 }
 
 /*FIN HEADER*/
@@ -208,7 +208,7 @@ header span i:hover{
 
 
 body{
-    background-color: #a2c1d8;
+    background-color: #F3F0D7;
 }
 
 
@@ -220,7 +220,7 @@ body{
 
 .info{
     height: auto;
-    background-color: #c5ddd1;
+    background-color: #FFE194;
 }
 
 
@@ -297,6 +297,20 @@ body{
     margin-right: 5px;
 }
 
+.descrip{
+    margin-bottom: 1vw;
+}
+
+#botonci{
+    border: 2px solid #050620;
+    background-color: #050620;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #DBF6E9;
+    margin-left: 1vw;
+    padding: 5px;
+}
+
 button{
     margin:10px;
     font-size: 10px;
@@ -315,7 +329,7 @@ button{
 
 
 footer{
-    background-color:   #94abbd;
+    background-color:   #FBEEAC;
     justify-content: space-between;
 }
 

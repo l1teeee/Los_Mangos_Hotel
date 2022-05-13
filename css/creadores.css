@@ -21,7 +21,7 @@ header{
     padding: 14px 14px;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #78c7ca;
+    background-color: #A2D2FF;
 }
 
 header #logo img{
@@ -199,66 +199,74 @@ body{
 }
 
 .perfil-1{
-    margin-bottom: 20px;
-    margin-top: 15px;
-}
-.perfil-1 .informacion{
-    float: right;
-    margin-top: 110px;
-    margin-right: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #BBDDF2;
 }
 
-.perfil-1 img{
-    width: 400px;
-    height: 500px;
-    margin-left: 150px;
-    border: 15px solid #2f44be;
-    border-radius: 5px;
+.perfil-1 .perfil_sub{
+    display: flex;
+    flex-direction: row; 
 }
 
 .perfil-1 h2{
     font-size: 35px;
+    color: #16003B;
 }
 
 .perfil-1 li{
     font-size: 22px;
+    color: #16003B;
 }
+
+.perfil-1 img{
+    border: 10px solid #16003B;
+    border-radius: 4px;
+}
+
+/*-------------------------*/
 
 .perfil-2{
-    background-color: #2f44be;
-    margin-bottom: 25px;
-    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #16003B;
 }
 
-.perfil-2 .informacion{
-    float: left;
-    margin-top: 100px;
-    margin-left: 120px;
-    color: white;
-}
-
-.perfil-2 img{
-    width: 400px;
-    height: 500px;
-    border: 15px solid #BBDDF2;
-    margin-left: 180px;
-    border-radius: 5px;
-    
+.perfil-2 .perfil_sub{
+    display: flex;
+    flex-direction: row; 
 }
 
 .perfil-2 h2{
     font-size: 35px;
+    color: #C4DDFF;
 }
 
 .perfil-2 li{
     font-size: 22px;
+    color: #C4DDFF;
 }
+
+.perfil-2 img{
+    border: 10px solid #C4DDFF;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+/*-------------------------*/
+
 
 /*FIN DEL BODY*/
 
 /*FOTTER*/
 footer{
-    background-color:   #94abbd;
+    background-color:   #FBEEAC;
     justify-content: space-between;
 }
 
@@ -296,25 +304,70 @@ footer .fo i:hover{
         visibility:hidden;
         display:none;
     }
+
+    .perfil-1 .perfil_sub{
+        margin: 1vw 1vw 1vw 20rem;
+        align-items: center;
+        align-content: center;
+    }
+
+    .perfil-1 .informacion{ 
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+
+    .perfil-1 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 40px;
+    }
+
+    .perfil-1 .informacion ul{
+        margin-left: 2rem;
+    }
+
+    .perfil-1 .informacion li{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
     .perfil-1 img{
-        margin-left: 80px;
+        width: 32%;
+        height: 80%;
+        margin-left: 12rem;
+        border: 15px solid #16003B;
+        
     }
 
-    .perfil-1 .informacion{
-        display: inline;
-        margin-top: 80px;
-        margin-right: 130px;
-        width: 450px;
+    /*-----------------------*/
+    
+    .perfil-2 .perfil_sub{
+        margin: 1vw 1vw 1vw 20rem;
+        align-items: center;
+        align-content: center;
     }
 
-    .perfil-2 .informacion{
-        display: inline;
-        margin-top: 50px;
-        margin-left: 80px;
-        width: 450px;
+    .perfil-2 .informacion{ 
+        margin-top: 2rem;
+        margin-left: 4rem;
     }
 
+    .perfil-2 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 40px;
+    }
 
+    .perfil-2 .informacion ul{
+        margin-left: 2rem;
+    }
+
+    .perfil-2 .informacion li{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .perfil-2 img{
+        width: 32%;
+        height: 80%;
+        margin-left: 12rem;
+    }
 }
 
 @media(max-width:1199px) and (min-width:901px){
@@ -323,457 +376,245 @@ footer .fo i:hover{
         display:none;
     }
 
-    .menus span{
-        font-size: 25px;
+    
+    .perfil-1 .perfil_sub{
+        margin: 1vw 1vw 1vw 1rem;
+        align-items: center;
+        align-content: center;
     }
 
-    .perfil-1{
-        max-width:1199px;
-        min-width:901px;
-        height: 500px;
-        margin-bottom: 20px;
-        margin-top: 15px;
+    .perfil-1 .informacion{ 
+        margin-top: 1rem;
+        margin-left: 2rem;
     }
 
-    .perfil-2{
-        max-width:1199px;
-        min-width:751px;
-        height: 550px;
-        margin-bottom: 25px;
+    .perfil-1 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 30px;
     }
+
+    .perfil-1 .informacion ul{
+        margin-left: 2rem;
+    }
+
+    .perfil-1 .informacion li{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+    }
+
     .perfil-1 img{
-        width: 350px;
-        height: 450px;
-        margin-top: 40px;
-        margin-left: 20px;
+        width: 25%;
+        height: 90%;
+        margin-left: 12rem;
+        border: 15px solid #16003B;
+        
     }
 
-    .perfil-1 .informacion{
-        display: inline;
-        margin-top: 80px;
-        margin-right: 30px;
-        width: 450px;
+    /*-----------------------*/
+    
+    .perfil-2 .perfil_sub{
+        margin: 1vw 1vw 1vw 1rem;
+        align-items: center;
+        align-content: center;
     }
 
-    .perfil-1 h2{
-        text-align: center;
-        font-size: 35px;
+    .perfil-2 .informacion{ 
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .perfil-2 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 30px;
+    }
+
+    .perfil-2 .informacion ul{
+        margin-left: 2rem;
+    }
+
+    .perfil-2 .informacion li{
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .perfil-2 img{
-        float: right;
-        width: 350px;
-        height: 450px;
-        margin-top: 10px;
-        margin-left: 0px;
-        margin-right: 20px;
+        width: 25%;
+        height: 90%;
+        margin-left: 12rem;
     }
 
-    .perfil-2 .informacion{
-        display: inline;
-        margin-top: 50px;
-        margin-left: 30px;
-        width: 450px;
-    }
-
-
-    
 
 
 }
+
+
+
 
 @media(max-width:900px) and (min-width:751px){
     .menus span{
         font-size: 18px;
     }
-
+    
     #boton{
         visibility:hidden;
         display:none;
     }
 
-    .perfil-1{
-        max-width:900px;
-        min-width:751px;
-        height: 500px;
-        margin-bottom: 20px;
-        margin-top: 15px;
+    .perfil-1 .perfil_sub{
+        margin: 1vw 1vw 1vw 1rem;
+        align-items: center;
+        align-content: center;
     }
 
-    .perfil-2{
-        max-width:900px;
-        min-width:751px;
-        height: 500px;
-        margin-bottom: 25px;
-        padding: 25px;
+    .perfil-1 .informacion{ 
+        margin-top: 1rem;
+        margin-left: 2rem;
     }
 
-    .perfil-1 img{
-        width: 250px;
-        height: 400px;
-        margin-top: 60px;
-        margin-left: 20px;
+    .perfil-1 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 25px;
     }
 
-    .perfil-2 img{
-        float: right;
-        width: 250px;
-        height: 400px;
-        margin-top: 20px;
-        margin-left: 0px;
-        margin-right: 20px;
-
+    .perfil-1 .informacion ul{
+        margin-left: 2rem;
     }
 
-    .perfil-1 .informacion{
-        display: inline;
-        margin-top: 80px;
-        margin-right: 60px;
-        width: 380px;
-    }
-
-    .perfil-2 .informacion{
-        float: left;
-        margin-top: 20px;
-        margin-left: 40px;
-        width: 380px;
-    }
-    
-    .perfil-1 h2{
-        text-align: center;
-        font-size: 35px;
-    }
-
-    .perfil-2 h2{
-        font-size: 35px;
-    }
-    
-    .perfil-1 li{
-        font-size: 22px;
-    }
-    .perfil-2 li{
-        font-size: 22px;
-    }
-    
-    
-
-}
-
-
-/*FIN DEEDICION PARA DISPOSITIVOS TABLES*/
-
-/* DISEÑOS PARA CELULARES*/
-
-
-/*MEDIA PARA SUFERFACE DUO */
-
-
-@media(max-width:540px) and (min-width:531px){
-    .menus{
-        visibility:hidden;
-        display:none;
-    }
-    .perfil-1{
-        max-width:540px;
-        min-width:531px;
-        height: 700px;
-        margin-bottom: 50px;
-    }
-
-    .perfil-2{
-        background-color: #2f44be;
-        max-width:540px;
-        min-width:531px;
-        height: 750px;
+    .perfil-1 .informacion li{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
     }
 
     .perfil-1 img{
-        display: block;
-        width: 250px;
-        height: 300px;
-        margin-left: 140px;
-        border: 15px solid #2f44be;
-        border-radius: 5px;
+        width: 20%;
+        height: 82%;
+        margin-left: 8rem;
+        border: 15px solid #16003B;
+        
+    }
+
+    /*-----------------------*/
+    
+    .perfil-2 .perfil_sub{
+        margin: 1vw 1vw 1vw 1rem;
+        align-items: center;
+        align-content: center;
+    }
+
+    .perfil-2 .informacion{ 
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .perfil-2 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 25px;
+    }
+
+    .perfil-2 .informacion ul{
+        margin-left: 2rem;
+    }
+
+    .perfil-2 .informacion li{
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .perfil-2 img{
-        width: 250px;
-        height: 300px;
-        margin-left: 110px;
-        border-radius: 8px;
-        display: block;
+        width: 20%;
+        height: 82%;
+        margin-left: 8rem;
     }
-
-    .perfil-1 .informacion{
-        float: left;
-        margin-top: 20px;
-        margin-left:100px;
-        width: 320px;
-    }
-
-    .perfil-2 .informacion{
-        display: block;
-        float: right;
-        margin-top: 20px;
-        margin-right:80px;
-        width: 330px;
-    }
-
-    .perfil-1 h2{
-        font-size: 35px;
-        text-align: center;
-    }
-    
-    .perfil-1 li{
-        font-size: 20px;
-    }
-
-    .perfil-2 h2{
-        font-size: 35px;
-        text-align: center;
-    }
-    
-    .perfil-2 li{
-        font-size: 20px;
-    }
-
 
 }
 
-
-
-
-
-
-/*FIN DEL MEDIA PARA SUFERFACE DUO*/
-
-@media(max-width:530px) and (min-width:379px){
+@media(max-width:750px) and (min-width:551px){
     .menus{
         visibility:hidden;
         display:none;
     }
 
-    .perfil-1{
-        max-width:550px;
-        min-width:379px;
-        height: 700px;
-        margin-bottom: 50px;
+    .perfil-1 .perfil_sub{
+        margin: 1vw 1vw 1vw 1rem;
+        align-items: center;
+        align-content: center;
     }
 
-    .perfil-2{
-        max-width:550px;
-        min-width:379px;
-        height: 750px;
+    .perfil-1 .informacion{ 
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .perfil-1 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 25px;
+    }
+
+    .perfil-1 .informacion ul{
+        margin-left: 2rem;
+    }
+
+    .perfil-1 .informacion li{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
     }
 
     .perfil-1 img{
-        display: block;
-        width: 250px;
-        height: 300px;
-        margin-left: 80px;
+        width: 20%;
+        height: 60%;
+        margin-left: 5rem;
+        border: 10px solid #16003B;
+        
+    }
+
+    /*-----------------------*/
+    
+    .perfil-2 .perfil_sub{
+        margin: 1vw 1vw 1vw 1rem;
+        align-items: center;
+        align-content: center;
+    }
+
+    .perfil-2 .informacion{ 
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .perfil-2 .informacion h2{ 
+        font-family: 'DM Sans', sans-serif;
+        font-size: 25px;
+    }
+
+    .perfil-2 .informacion ul{
+        margin-left: 2rem;
+    }
+
+    .perfil-2 .informacion li{
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .perfil-2 img{
-        width: 250px;
-        height: 300px;
-        margin-left: 50px;
-        display: block;
-    }
-
-    .perfil-1 .informacion{
-        display: block;
-        float: left;
-        margin-top: 20px;
-        margin-left:40px;
-        width: 320px;
-    }
-
-    .perfil-2 .informacion{
-        display: block;
-        float: right;
-        margin-top: 20px;
-        margin-left:90px;
-        width: 330px;
-    }
-
-    .perfil-1 h2{
-        font-size: 35px;
-        text-align: center;
-    }
-    
-    .perfil-1 li{
-        font-size: 20px;
-    }
-
-    .perfil-2 h2{
-        font-size: 35px;
-        text-align: center;
-    }
-    
-    .perfil-2 li{
-        font-size: 20px;
+        width: 20%;
+        height: 82%;
+        margin-left: 8rem;
     }
     
 }
 
 
-/*MEDIA PARA LOS OTROS DISPOSITIVOS*/
+@media(max-width:550px) and (min-width:379px){
+    .menus{
+        visibility:hidden;
+        display:none;
+    }
 
-@media(max-width:378px) and (min-width:279px){
+}
+
+@media(max-width:378px) and (min-width:200px){
     header #logo img{
         width: 40px;
         height: 40px;
     }
 
-    .menus{
-        visibility:hidden;
-        display:none;
-    }    
-
-    header span i{
-        font-size: 20px;
-
-    }
-    .perfil-1{
-        max-width:378px;
-        min-width:200px;
-        height: 620px;
-        margin-bottom: 60px;
-    }
-
-    .perfil-2{
-        max-width:378px;
-        min-width:200px;
-        height: 720px;
-    }
-
-    .perfil-1 img{
-        display: block;
-        width: 250px;
-        height: 300px;
-        margin-left: 60px;
-    }
-
-    .perfil-2 img{
-        width: 250px;
-        height: 300px;
-        margin-left: 38px;
-        display: block;
-    }
-
-    .perfil-1 .informacion{
-        display: block;
-        float: left;
-        margin-top: 20px;
-        margin-left:40px;
-        width: 300px;
-    }
-
-    .perfil-2 .informacion{
-        display: block;
-        float: right;
-        margin-top: 20px;
-        margin-left:40px;
-        width: 300px;
-    }
-
-    .perfil-1 h2{
-        font-size: 35px;
-        text-align: center;
-    }
-    
-    .perfil-1 li{
-        font-size: 15px;
-    }
-
-    .perfil-2 h2{
-        font-size: 35px;
-        text-align: center;
-    }
-    
-    .perfil-2 li{
-        font-size: 15px;
-    }
-
 }
-
-/* MEDIAS PARA GALAXI FOLD*/
-
-@media(max-width:280px) and (min-width:100px){
-    header #logo img{
-        width: 40px;
-        height: 40px;
-    }
-
-    .menus{
-        visibility:hidden;
-        display:none;
-    }    
-
-    header span i{
-        font-size: 20px;
-
-    }
-    .perfil-1{
-        max-width:288px;
-        min-width:100px;
-        height: 700px;
-        margin-bottom: 60px;
-    }
-
-    .perfil-2{
-        max-width:280px;
-        min-width:100px;
-        height: 780px;
-    }
-
-    .perfil-1 img{
-        display: block;
-        width: 200px;
-        height: 300px;
-        margin-left: 40px;
-    }
-
-    .perfil-2 img{
-        width: 200px;
-        height: 300px;
-        margin-left: 15px;
-        display: block;
-    }
-
-    .perfil-1 .informacion{
-        display: block;
-        float: left;
-        margin-top: 20px;
-        margin-left:40px;
-        width: 220px;
-    }
-
-    .perfil-2 .informacion{
-        display: block;
-        float: right;
-        margin-top: 20px;
-        margin-left:30px;
-        width: 220px;
-    }
-
-    .perfil-1 h2{
-        font-size: 35px;
-        text-align: center;
-    }
-    
-    .perfil-1 li{
-        font-size: 15px;
-    }
-
-    .perfil-2 h2{
-        font-size: 35px;
-        text-align: center;
-    }
-    
-    .perfil-2 li{
-        font-size: 15px;
-    }
-
-}
-

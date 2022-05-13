@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo-main.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    <style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Karla:wght@300&family=Manrope&family=Montserrat:wght@200&family=Rubik&display=swap');</style>
+    <link rel="stylesheet" href="css/reservacion.css" type="text/css" media="all">
+    <script src="https://kit.fontawesome.com/28b946baf8.js" crossorigin="anonymous"></script>
+    <title>Hotel Los Mangos  </title>
+</head>
+<header>
+    <div></div>
+    <div id="logo">
+        <a href="index.html"><img src="img/logo-main.png" src="index.html"></a>
+    </div>
+    <script>function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }</script>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="about_us.html">Conócenos</a>
+            <a href="reservar.html">Reservar</a>
+            <a href="creadores.html">Creadores</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="galeria/galeria.html">Galeria</a>
+        </div>
+    </div>
+    <span onclick="openNav()"><i class="fa-solid fa-bars" id="boton"></i></span>
+</header>
+<div class="line"></div>
+<body>
+  <div class="menus">
+      <a href="about_us.html">
+        <span>Conócenos</span>
+        <span>
+            <i class="fa-solid fa-umbrella-beach"></i>
+        </span>
+    </a>
+    <a href="reservar.html">
+        <span style="font-size: 27px;
+        color: #070707;">Reservar</span>
+        <span>
+            <i class="far fa-calendar-check" style="font-size: 27px;
+            color: #070707;"></i> 
+        </span>
+    </a>
+    
+    <a href="creadores.html">
+        <span>Creadores</span>
+        <span>
+            <i class="fas fa-user-cog"></i>   
+        </span>
+    </a>
+
+    <a href="contacto.html">
+        <span>Contacto</span>
+        <span>
+            <i class="fas fa-address-book"></i>   
+        </span>
+    </a>
+
+    <a href="galeria/galeria.html">
+        <span>Galeria</span>
+        <span>
+            <i class="fa-solid fa-camera"></i> 
+        </span>
+    </a>
+  </div>
+  <div class="arriba">
+    <div class="bot">
+      <i class="fa-solid fa-location-pin"></i>
+      <h1>Hotel Los Mangos, Usulután (departamento), El Salvador</h1>
+    </div>
+    <div class="bot" style="margin-right: 0px;">
+      <i class="fa-solid fa-calendar-check"></i>
+      <h1>Check In</h1>
+      <input type="date" id="start" name="trip-start"
+       value="2022-05-13"
+       min="2022-05-01" max="2022-10-31">
+
+       <i class="fa-solid fa-arrow-right"></i>
+    </div>
+    <div class="bot" style="margin-left: 0px;">
+      <i class="fa-solid fa-calendar-minus"></i>
+      <h1>Check Out</h1>
+      <input type="date" id="start" name="trip-start"
+       value="2022-05-20"
+       min="2022-05-01" max="2022-10-31">
+    </div>
+    <div class="bot">
+      <i class="fa-solid fa-user"></i>
+      <h1>Huéspedes</h1>
+      <label for="quantity">Maximo 5</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="5">
+    </div>
+  </div>
+  <div class="rese">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nombres</label>
+        <input type="text" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="inputAddress" placeholder="@">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Numero de Celular</label>
+        <input type="number" class="form-control" id="inputAddress2" placeholder="####-####">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Habitaciones</label>
+        <select id="inputState" class="form-select">
+          <option selected>Elegir Habitación</option>
+          <option>Suite with sea view (Max 4 Personas)</option>
+          <option>Garden View Suite (Big) (Max 5 Personas)</option>
+          <option>Garden View Suite (Large) (Max 3 Personas)</option>
+          <option>Garden View Suite (Small) (Max 2 Personas)</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Paquetes Experiencias</label>
+        <select id="inputState" class="form-select">
+          <option selected>Sin Experiencia</option>
+          <option>Los mangos paquete basico de surf (4 noches vista al mar suite)</option>
+          <option>Los mangos paquete basico de surf (4 noches vista al jardín suite)</option>
+          <option>Los mangos paquete de surf premium (4 noches vista al mar suite)</option>
+          <option>Los mangos premium surf package (4 nights vista al jardin suite)</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Marca esta casilla si deseas recibir por correo electrónico nuestro boletín de ofertas especiales de Hotel Los Mangos con excelentes promociones.
+          </label>
+        </div>
+      </div>
+      <div class="col-12" style="margin-bottom: 2vw;">
+        <input type="button"
+        name="button1"
+        value="Reservar" onclick="pulsar()">
+      </div>
+    </form>
+  </div>
+</body>
+<script languaje="JavaScript">
+function pulsar() {
+alert("Reservación Completada");
+}
+</script>
+<footer>
+    <div class="fo">
+        <a href="https://es-la.facebook.com/HotelLosMangosElSalvador/" target="_blank" ><i class="fab fa-facebook"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=50378904751&app=facebook&entry_point=page_cta" target="_blank" ><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.hoteles.com/ho477021/hotel-los-mangos-punta-mango-el-salvador/" target="_blank"><i class="fas fa-h-square"></i></a>
+    </div>
+</footer>
+</html>

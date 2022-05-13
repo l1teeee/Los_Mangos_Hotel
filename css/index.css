@@ -39,7 +39,7 @@ header{
     padding: 14px 14px;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #B2DEEC;
+    background-color: #A2D2FF;
 }
 
 header #logo img{
@@ -137,7 +137,7 @@ header span i:hover{
 }
 
 body{
-    background-color: #a2c1d8;
+    background-color: #FFE699;
 }
 
 
@@ -216,7 +216,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #a2c1d8;
+    background-color: #F3F0D7;
     margin-top: vw;
 }
 
@@ -287,7 +287,7 @@ body{
 }
 
 .califica{
-    background-color: #a2c1d8;
+    background-color: #F3F0D7;
 }
 
 .califica h4{
@@ -341,7 +341,7 @@ body{
 
 
 .who{
-    background-color: #b7d0e4;
+    background-color: #FFE194;
 }
 
 .who .texto{
@@ -362,7 +362,7 @@ body{
 
 .fran{
     justify-content: flex-end;
-    background-color: #b7d0e4;
+    background-color: #FFE194;
     display: flex;
     flex-direction: row;
     
@@ -392,7 +392,7 @@ body{
 }
 
 footer{
-    background-color:   #94abbd;
+    background-color:   #FBEEAC;
     justify-content: space-between;
 }
 

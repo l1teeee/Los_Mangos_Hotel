@@ -39,7 +39,7 @@ header{
     padding: 14px 14px;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #78c7ca;
+    background-color: #A2D2FF;
 }
 
 header #logo img{
@@ -135,7 +135,7 @@ header span i:hover{
 }
 
 body{
-    background-color: #a2c1d8;
+    background-color: #FFE699;
 }
 
 
@@ -214,7 +214,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #a2c1d8;
+    background-color: #F3F0D7;
     margin-top: vw;
 }
 
@@ -270,7 +270,7 @@ body{
     margin-top: 12px;
     margin-left: 3vw;
     width: 20vw;
-    background-color: #31326F;
+    background-color: #0061A8;
 }
 
 .dropdown-menu a{
@@ -292,18 +292,18 @@ body{
 .selector{
     display: flex;
     flex-direction: column;
-    background-color: #94abbd;
+    background-color: #89ccfc;
     border-radius: 2%;
     margin: 2vw;
     padding-bottom: 2vw;
 }
 
 .color{
-    background-color: #95D1CC;
+    background-color: #faf19e;
 }
 
 .imagis{
-    background-color: #FAFFAF;
+    background-color: #FFF9B6;
     
 }
 
@@ -427,7 +427,7 @@ body{
 
 footer{
     z-index: 21;
-    background-color:   #94abbd;
+    background-color:   #e7e4cf;
     justify-content: space-between;
 }
 

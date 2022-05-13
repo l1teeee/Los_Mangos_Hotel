@@ -34,7 +34,7 @@ header{
     padding: 14px 14px;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #78c7ca;
+    background-color: #A2D2FF;
 }
 
 header #logo img{
@@ -188,7 +188,7 @@ header span i:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #a2c1d8;
+    background-color: #F3F0D7;
     margin-top: vw;
 }
 
@@ -206,7 +206,7 @@ header span i:hover{
 
 
 body{
-    background-color: #a2c1d8;
+    background-color: #F3F0D7;
 }
 
 #big{
@@ -229,7 +229,7 @@ body{
 
 
 .formu{
-    background-color: #333C83;
+    background-color: #344FA1;
 }
 
 .formu #seg{
@@ -237,17 +237,17 @@ body{
 }
 
 .col-md-6{
-    color: #DBF6E9;
+    color: #EDF6E5;
 }
 
 .col-12{
-    color: #DBF6E9;
+    color: #EDF6E5;
 }
 
 
 .formu .pos h4{
     font-family: 'DM Sans', sans-serif;
-    color: #DBF6E9;
+    color: #EDF6E5;
     margin: 20px;
     text-align: center;
 }
@@ -260,7 +260,7 @@ body{
 
 .infoma{
     margin-top: 2vw;
-    color: #DBF6E9;
+    color: #EDF6E5;
 }
 
 .info{
@@ -283,7 +283,7 @@ body{
 }
 
 footer{
-    background-color:   #94abbd;
+    background-color:   #FBEEAC;
     justify-content: space-between;
 }
 

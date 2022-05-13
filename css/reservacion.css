@@ -33,93 +33,6 @@ Colores
     border-radius: 5px;
 }
 
-
- .fs-gal-view {
-    display: none;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    left: 0;
-    top: 0;
-    text-align: center;
-    background-size: contain;
-    background-position: center center;
-    background-color: rgba(20, 20, 20, 0.7);
-    background-repeat: no-repeat;
-    overflow: hidden;
-    z-index: 999999;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-}
-
-.fs-gal-view h1 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 50px;
-    line-height: 50px;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    font-weight: 300;
-    font-size: 26px;
-}
-
-
-.fs-gal-prev, .fs-gal-next, .fs-gal-close {
-    position: absolute;
-    top: calc(50vh - 20px);
-    height: 40px;
-    width: 40px;
-    z-index: 999999;
-    -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 1));      
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 1)); 
-    transition: all 0.3s;
-}
-
-
-.fs-gal-prev:hover, .fs-gal-next:hover, .fs-gal-close:hover {
-    -webkit-filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.9));      
-    filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.9)); 
-    cursor: pointer;
-}
-
-
-.fs-gal-prev {
-    left: 14px;
-}
-
-
-.fs-gal-next {
-    right: 14px;
-}
-
-
-.fs-gal-close {
-    top: 14px;
-    right: 14px;
-    height: 30px;
-    width: 30px;
-}
-
-.fs-gal-main {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.fs-gal:hover, .fs-gal-nav:hover, .fs-gal-close:hover {
-    cursor: pointer;
-}
-
 /*Header*/
 header{
     display: flex;
@@ -222,7 +135,7 @@ header span i:hover{
 }
 
 body{
-    background-color: #F3F0D7;
+    background-color: #FFE699;
 }
 
 
@@ -305,53 +218,40 @@ body{
     margin-top: vw;
 }
 
-.imagis{
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex: row;
-    
-}
-
-.op{
+.arriba{
     display: flex;
     flex-direction: row;
+    border: #bdb9b7 1px solid;
     flex-wrap: wrap;
 }
 
-.sep{
-    background-color: #4981ac;
-}
-
-
-
-
-.galeriaman{
+.arriba .bot{
     display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
-}
-
-#tiu{
-    font-family: 'Rubik', sans-serif;
-    text-align: center;
-}
-
-.galeriaman img{
-    
-    opacity: 1;
+    flex-direction: row;
+    align-items: center;
     
 }
 
-.galeriaman img:hover{
-    transition: 1s;
-    opacity: 0.3;
+.arriba .bot input{
+    background-color: #faefcc;
+    border: #1B1A17 2px solid;
+    padding: 5px;
+    border-radius: 4px;
 }
 
+input{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #F3F0D7;
+    border: 2px solid #bdb9b7;
+}
+
+
+/*-------------------------------------------*/
 
 footer{
     z-index: 21;
-    background-color:   #FBEEAC;
+    background-color:   #e7e4cf;
     justify-content: space-between;
 }
 
@@ -384,41 +284,43 @@ footer .fo i:hover{
 }
 
 @media(max-width:2599px) and (min-width:1200px){
-    .enun{
-        margin: 18% 18% 0px 30%;
-
-    }
     
-    .lateral{
-        flex-direction: column;
-    }
-
-    .enun h1{
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .menus span{
-        font-size: 20px;
-    }
 
     #boton{
         visibility:hidden;
         display:none;
     }
 
-    .galeriaman img{
-        width: 25%;
-        height: 19rem;
-        
+
+    .arriba .bot{
+        border:solid 1px #F1EEE9;
+        border-radius: 5px;
+        margin: 16px 16px 16px 16px;
+        background-color:#fcedc1;
+        height: 4rem;
+        margin-left: 4vw;
+    }
+    
+    .arriba .bot i{
+        color: #1B1A17;
+        font-size: 20px;
+        margin: 15px;
+    }
+    
+    .arriba .bot h1{
+        color: #1B1A17;
+        font-size: 13px;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    .arriba .bot input{
+        margin: 12px;
     }
 
-    #tiu{
-        margin-left: 3vw;
-        font-family: 'Rubik', sans-serif;
-        font-size: 35px;
+    .rese{
+        margin: 3vw 6vw 2vw 6vw;
     }
-
+    
 
 }
 
@@ -428,67 +330,109 @@ footer .fo i:hover{
         display:none;
     }
 
-    .galeriaman img{
-        width: 25%;
-        height: 16rem;
-        opacity: 1;
-        
+    .arriba .bot{
+        border:solid 1px #F1EEE9;
+        border-radius: 5px;
+        margin: 16px 16px 16px 16px;
+        background-color:#fcedc1;
+        height: 4rem;
+        margin-left: 4vw;
+    }
+    
+    .arriba .bot i{
+        color: #1B1A17;
+        font-size: 20px;
+        margin: 15px;
+    }
+    
+    .arriba .bot h1{
+        color: #1B1A17;
+        font-size: 13px;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    .arriba .bot input{
+        margin: 12px;
     }
 
-    #tiu{
-        margin-left: 3vw;
-        font-size: 30px;
+    .rese{
+        margin: 3vw 6vw 2vw 6vw;
     }
-
 }
 
 
 
 
 @media(max-width:900px) and (min-width:751px){
-    .menus span{
-        font-size: 18px;
-    }
     
     #boton{
         visibility:hidden;
         display:none;
     }
 
-    .galeriaman img{
-        width: 33.3%;
-        height: 16rem;
-        opacity: 1;
-        
+    .arriba .bot{
+        border:solid 1px #F1EEE9;
+        border-radius: 5px;
+        margin: 16px 16px 16px 16px;
+        background-color:#fcedc1;
+        height: 4rem;
+        margin-left: 4vw;
+    }
+    
+    .arriba .bot i{
+        color: #1B1A17;
+        font-size: 20px;
+        margin: 15px;
+    }
+    
+    .arriba .bot h1{
+        color: #1B1A17;
+        font-size: 13px;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    .arriba .bot input{
+        margin: 12px;
     }
 
-    #tiu{
-        margin-left: 3vw;
-        font-size: 26px;
+    .rese{
+        margin: 3vw 6vw 2vw 6vw;
     }
-
+    
 }
-
-
-
-
 
 @media(max-width:750px) and (min-width:551px){
     .menus{
         visibility:hidden;
         display:none;
     }
-
-    .galeriaman img{
-        width: 33.1%;
-        height: 10rem;
-        opacity: 1;
+    .arriba .bot{
+        border:solid 1px #F1EEE9;
+        border-radius: 5px;
+        margin: 16px 16px 16px 16px;
+        background-color:#fcedc1;
+        height: 4rem;
+        margin-left: 4vw;
+    }
+    
+    .arriba .bot i{
+        color: #1B1A17;
+        font-size: 20px;
+        margin: 15px;
+    }
+    
+    .arriba .bot h1{
+        color: #1B1A17;
+        font-size: 13px;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    .arriba .bot input{
+        margin: 12px;
     }
 
-    #tiu{
-        margin-left: 3vw;
-        font-size: 22px;
-        margin-top: 2vw;
+    .rese{
+        margin: 3vw 6vw 2vw 6vw;
     }
 }
 
@@ -499,46 +443,70 @@ footer .fo i:hover{
         display:none;
     }
 
-    .galeriaman img{
-        width: 33.3%;
-        height: 10rem;
-        opacity: 1;
+    .arriba .bot{
+        border:solid 1px #F1EEE9;
+        border-radius: 5px;
+        margin: 16px 16px 16px 16px;
+        background-color:#fcedc1;
+        height: 4rem;
+        margin-left: 4vw;
     }
-
-    #tiu{
-        margin-left: 3vw;
+    
+    .arriba .bot i{
+        color: #1B1A17;
         font-size: 20px;
-        margin-top: 2vw;
+        margin: 15px;
+    }
+    
+    .arriba .bot h1{
+        color: #1B1A17;
+        font-size: 13px;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    .arriba .bot input{
+        margin: 12px;
     }
 
+    .rese{
+        margin: 3vw 6vw 2vw 6vw;
+    }
 }
 
 @media(max-width:378px) and (min-width:200px){
-    header #logo img{
-        width: 40px;
-        height: 40px;
-    }
-
+    
     .menus{
         visibility:hidden;
         display:none;
     }
 
-    header span i{
+    .arriba .bot{
+        border:solid 1px #F1EEE9;
+        border-radius: 5px;
+        margin: 16px 16px 16px 16px;
+        background-color:#fcedc1;
+        height: 4rem;
+        margin-left: 4vw;
+    }
+    
+    .arriba .bot i{
+        color: #1B1A17;
         font-size: 20px;
-
+        margin: 15px;
+    }
+    
+    .arriba .bot h1{
+        color: #1B1A17;
+        font-size: 13px;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    .arriba .bot input{
+        margin: 12px;
     }
 
-    .galeriaman img{
-        width: 50%;
-        height: 1rem;
-        opacity: 1;
-    }
-
-    #tiu{
-        margin-left: 3vw;
-        font-size: 20px;
-        margin-top: 2vw;
+    .rese{
+        margin: 3vw 6vw 2vw 6vw;
     }
 
 }
